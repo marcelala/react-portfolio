@@ -10,8 +10,8 @@ return(
         <div className="header__content">
         <div className="header__text-box">
 			<h1 className="heading-primary">
-				<span className="heading-primary--main">Hello, I'm Marcela Fortis</span>
-				<span className="heading-primary--sub">Junior Fullstack Developer</span>
+				<span className="heading-primary--main">Hello, I'm   </span> <span className= "heading-primary--name"> Marcela Fortis</span>
+				<span className="heading-primary--sub">Fullstack Developer</span>
 			</h1>
 		</div>
 		<div className="header__btn-box">

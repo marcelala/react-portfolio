@@ -46,7 +46,6 @@ componentDidMount(){
 	}
     render() {
     return(
-         <div>
             <nav id="navbar" className="navbar">
 					<div className="navbar__box">
 						<a
@@ -77,36 +76,34 @@ componentDidMount(){
 									onClick={() => {
 										this.scrolling(this.projects);
 									}}
-									className="btn-style nav-item nav-link">
+									className="navbar__nav-link">
 									Projects
 								</a>
 								<a
 									onClick={() => {
 										this.scrolling(this.about);
 									}}
-									className="btn-style nav-item nav-link">
+									className="navbar__nav-link">
 									About
 								</a>
                                 								<a
 									onClick={() => {
 										this.scrolling(this.skills);
 									}}
-									className="btn-style nav-item nav-link">
+									className="navbar__nav-link">
 									Skills
 								</a>
 								<a
 									onClick={() => {
 										this.scrolling(this.contact);
 									}}
-									className="btn-style nav-item nav-link">
+									className="navbar__nav-link">
 									Contact
 								</a>
 							</div>
 						</div>
 					</div>
 				</nav>
-                </div>
-
     )
 
 }

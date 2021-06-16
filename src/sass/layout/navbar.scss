@@ -1,19 +1,36 @@
 
 .navbar{
-
-    &__container {
+        
+    &__box {
+        width: 100%;
         position: relative;
-        height: 15rem;
-
-    }    
-    &__navbar-brand-logo {
-        position: absolute;
-        text-align: left;
         height: 10rem;
+        display: inline;
+    }    
+    
+    &__navbar-brand-logo {
+        position: relative;
+        text-align: left;
+        height: 7rem;
+        cursor: pointer;
     }
+
     &__nav {
         position: relative;
+        display: flex;
+        justify-content: space-between;
     }
+    
+    &__nav-link {
+        font-size:2rem;
+		font-weight:500;
+		text-decoration:none;
+		text-transform:uppercase;
+		transition:all .4s;
+		display: inline-block;
+        cursor: pointer;
+    }
+
     &__toggler-icon {
         position: fixed;
         height:7rem;
