@@ -5,8 +5,8 @@ export default function Background(){
     return (
 
 
-<div className="container">
-    <img className="background" src={ wallpaper } alt= "background" />
+<div className="background">
+    <img className="background__image" src={ wallpaper } alt= "background" />
   <div className="circle-container">
     <div className="circle"></div>
   </div>

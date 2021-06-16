@@ -1,0 +1,22 @@
+
+.navbar{
+
+    &__container {
+        position: relative;
+        height: 15rem;
+
+    }    
+    &__navbar-brand-logo {
+        position: absolute;
+        text-align: left;
+        height: 15rem;
+    }
+    &__nav {
+        position: relative;
+    }
+    &__toggler-icon {
+        position: fixed;
+        height:7rem;
+		width:7rem;
+    }
+}
