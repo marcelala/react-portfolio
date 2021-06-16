@@ -1,5 +1,5 @@
 import './sass/main.scss';
-import Background from './components/Background';
+import Header from './components/Header';
 import NavBar from './components/NavBar';
 
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Background/>
+      <Header/>
     </div>
   );
 }

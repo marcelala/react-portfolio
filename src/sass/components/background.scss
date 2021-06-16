@@ -6,23 +6,26 @@ body {
 .background {
   width: 100%;
   height: 100%;
+  background: transparent;
+  background-position:top;
+	background-size:cover;
 
+    &__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 
-  &__image {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-
-  mask-image: radial-gradient(
-    white 0%,
-    white 30%,
-    transparent 90%,
-    transparent
-  );
+    mask-image: 
+      radial-gradient(
+      white 0%,
+      white 30%,
+      transparent 90%,
+      transparent
+    );
   }
 }
 
@@ -36,6 +39,7 @@ body {
   animation-timing-function: linear;
 
   .circle {
+    position: relative;
     width: 100%;
     height: 100%;
     border-radius: 50%;

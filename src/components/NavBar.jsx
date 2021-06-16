@@ -46,13 +46,7 @@ componentDidMount(){
 	}
     render() {
     return(
-        <div>
-        <Background
-					ref={this.navEffect}
-					id="my-background"
-					aboutRef={this.about}
-					bounceIn={"wow bounceIn"}
-				/>
+         <div>
             <nav id="navbar" className="navbar">
 					<div className="navbar__box">
 						<a
