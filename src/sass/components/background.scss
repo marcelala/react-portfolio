@@ -40,12 +40,12 @@ body {
     border-radius: 50%;
     mix-blend-mode: screen;
     background-image: radial-gradient(
-      hsl(180, 100%, 80%),
-      hsl(180, 100%, 80%) 10%,
-      hsla(180, 100%, 80%, 0) 56%
+      hsl(54, 100%, 80%),
+      hsl(54, 100%, 80%) 10%,
+      hsla(54, 100%, 80%, 0) 56%
     );
 
-    animation: fadein-frames 200ms infinite, scale-frames 2s infinite;
+    animation: fadein-frames 100ms infinite, scale-frames 2s infinite;
 
     @keyframes fade-frames {
       0% {
@@ -76,7 +76,7 @@ body {
     }
   }
 
-  $particleBaseSize: 8;
+  $particleBaseSize: 9;
 
   
   @for $i from 1 through $particleNum {
@@ -114,30 +114,6 @@ body {
       .circle {
         animation-delay: random(4000) + ms;
       }
-    }
-  }
-}
-
-.message {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
-  color: white;
-  font-family: "Josefin Slab", serif;
-  line-height: 27px;
-  font-size: 18px;
-  text-align: right;
-  pointer-events: none;
-  animation: message-frames 1.5s ease 5s forwards;
-  opacity: 0;
-  
-  @keyframes message-frames {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
     }
   }
 }
