@@ -1,0 +1,21 @@
+.about{
+        display: inline-block;
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        margin-left: 5rem;
+        @include respond(tab-port) {
+            margin-top:3rem;
+        }
+
+    &__image{
+        max-width: 25%;
+		position:absolute;
+
+        @include respond(tab-port) {
+			position:relative;
+            margin-top:3rem;
+
+    }
+}
+}

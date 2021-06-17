@@ -47,7 +47,7 @@ body {
     background-image: radial-gradient(
       hsl(54, 100%, 80%),
       hsl(54, 100%, 80%) 10%,
-      hsla(54, 100%, 80%, 0) 56%
+      hsla(54, 100%, 80%, 0.082) 56%
     );
 
     animation: fadein-frames 100ms infinite, scale-frames 2s infinite;
