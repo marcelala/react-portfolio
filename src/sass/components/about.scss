@@ -1,9 +1,10 @@
 .about{
-        display: inline-block;
+        display: block;
         max-width: 100%;
         position: relative;
         margin: auto;
         margin-left: 5rem;
+        justify-content: center;
         @include respond(tab-port) {
             margin-top:3rem;
         }
@@ -11,6 +12,14 @@
     &__image{
         max-width: 25%;
 		position:absolute;
+        margin: auto;
+        mask-image: 
+        radial-gradient(
+        beige 0%,
+        beige 0%,
+        transparent 85%,
+        transparent
+    );
 
         @include respond(tab-port) {
 			position:relative;

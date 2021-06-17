@@ -13,7 +13,7 @@ export default function About() {
             <div className="row">
             <div className="col-1-of-2">
                 <h1 className="heading-primary--main">
-                <div class="u-align-center u-margin-bottom-big">    
+                <div className="u-align-center u-margin-bottom-big">    
                     About me
                 </div>
                     </h1>

@@ -54,49 +54,60 @@ let data = {
     "skillsDescription":"Your skills here",
     "skills":[
       {
-        "skillname":"HTML5"
+        "skillname":"HTML5",
+        "skillicon": ["fab", "html5"]
       },
       {
-        "skillname":"CSS"
+        "skillname":"CSS",
+        "skillicon": ["fab", "css3-alt"]
       },
       {
-        "skillname":"Sass"
+        "skillname":"Sass",
+        "skillicon": ["fab", "sass"]
       },
       {
-        "skillname":"Javascript"
+        "skillname":"Javascript",
+        "skillicon": ["fab", "js-square"]
       },
       {
-        "skillname":"React.js"
+        "skillname":"React.js",
+        "skillicon": ["fab", "react"]
       },
       {
-        "skillname":"Vue.js"
+        "skillname":"Vue.js",
+        "skillicon": ["fab", "vuejs"]
       },
       {
-        "skillname":"Java"
+        "skillname":"Java",
+        "skillicon": ["fab", "java"] 
       },
       {
-        "skillname":"PostgreSQL"
+        "skillname":"PostgreSQL",
+        "skillicon": [""]
       },
       {
-        "skillname":"Git"
+        "skillname":"Git",
+        "skillicon": ["fab", "git"]
       },
       {
-        "skillname":"Agile"
+        "skillname":"Firebase",
+        "skillicon": [""]
       },
       {
-        "skillname":"Firebase"
+        "skillname":"Docker",
+        "skillicon": ["fab", "docker"]
       },
       {
-        "skillname":"Docker"
+        "skillname":"Figma",
+        "skillicon": ["fab", "figma"]
       },
       {
-        "skillname":"Figma"
+        "skillname":"Agile",
+        "skillicon": [""]
       },
       {
-        "skillname":"Agile"
-      },
-      {
-        "skillname":"Scrum"
+        "skillname":"Scrum",
+        "skillicon": [""]
       }
     ],
     "languages":[
