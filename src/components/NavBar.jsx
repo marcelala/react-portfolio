@@ -1,63 +1,21 @@
 import React from "react";
 import WOW from "wow.js";
+import { Link } from 'react-scroll';
 
 import Background from "./Background.jsx";
-import  Brand  from "../assets/img/MF.png"
+import Brand  from "../assets/img/MF.png"
 
 
-class NavBar extends React.Component {
-	constructor(props) {
-		super(props);
-		this.about = React.createRef();
-        this.skills = React.createRef();
-		this.projects = React.createRef();
-		this.contact = React.createRef();
-
-		this.scrolling = this.scrolling.bind(this);
-	}
-
-componentDidMount(){
-		new WOW().init();
-	}
-
-	navEffect(){
-		window.addEventListener("scroll", () => {
-			var navBar = document.getElementById("navbar");
-			var domRect = navBar.getBoundingClientRect();
-			var domBGRect = myBackground.getBoundingClientRect();
-            var myBackground = document.getElementById("my-background");
-
-
-			if (domRect.y <= -domRect.height) {
-				navBar.classList.add("fade-in-nav");
-			}
-			if (-domBGRect.height < domBGRect.top) {
-				navBar.classList.remove("fade-in-nav");
-			}
-		});
-	}
-
-	scrolling(instance){
-		let node = document.getElementById(instance.current.props.id);
-		window.scrollTo({
-			top: node.offsetTop,
-			behavior: "smooth"
-		});
-	}
-    render() {
+export default function NavBar() {
+	
     return(
             <nav id="navbar" className="navbar">
 					<div className="navbar__box">
-						<a
-							className="navbar__navbar-brand"
-							onClick={() => {
-								window.scrollTo({
-									top: 0,
-									behavior: "smooth"
-								});
-							}}>
-							 <img src={Brand} className="navbar__navbar-brand-logo" alt="M F logo"/>
-						</a>
+						<div className="navbar__navbar-brand">
+							 <img src={Brand} className="navbar__navbar-brand-logo" 
+							 alt="M F logo" 
+							 />
+						</div>
 						<button
 							className="navbar__toggler"
 							type="button"
@@ -72,34 +30,26 @@ componentDidMount(){
 							className="collapse navbar-collapse"
 							id="navbarNavAltMarkup">
 							<div className="navbar__nav">
-								<a
-									onClick={() => {
-										this.scrolling(this.projects);
-									}}
-									className="navbar__nav-link">
+								<Link 
+								className="navbar__nav-link"
+ 								activeClass="active" to="Projects" spy={true} smooth={true} duration={1000}>
 									Projects
-								</a>
-								<a
-									onClick={() => {
-										this.scrolling(this.about);
-									}}
-									className="navbar__nav-link">
+								</Link>
+								<Link 
+								className="navbar__nav-link"
+ 								activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
 									About
-								</a>
-                                								<a
-									onClick={() => {
-										this.scrolling(this.skills);
-									}}
-									className="navbar__nav-link">
+								</Link>
+                                <Link 
+								className="navbar__nav-link"
+ 								activeClass="active" to="Skills" spy={true} smooth={true} duration={1000}>
 									Skills
-								</a>
-								<a
-									onClick={() => {
-										this.scrolling(this.contact);
-									}}
-									className="navbar__nav-link">
+								</Link>
+								<Link 
+								className="navbar__nav-link"
+ 								activeClass="active" to="Contact" spy={true} smooth={true} duration={1000}>
 									Contact
-								</a>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -107,5 +57,3 @@ componentDidMount(){
     )
 
 }
-}
-export default NavBar;
