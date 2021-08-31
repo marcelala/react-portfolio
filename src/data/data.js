@@ -15,7 +15,7 @@ let data = {
           "className":"fa fa-github"
         }
       ],
-    "aboutme":"I'm an open-minded, driven and inquisitive woman. I love challenging myself and learning new things. My interest in IT stems from my love of helping others while building up my own skills at the same time. I am specially interested in Frontend Development. ",
+    "aboutMe":"I'm an open-minded, driven and inquisitive woman. I love challenging myself and learning new things. My interest in IT stems from my love of helping others while building up my own skills at the same time. I am specially interested in Frontend Development. ",
     "website":"https://marcelaf-portfolio.web.app/",
     "education":[
               {
@@ -79,7 +79,7 @@ let data = {
       },
       {
         "skillname":"Java",
-        "skillicon": ["fab", "java"] 
+        "skillicon": ["fab", "java"]
       },
       {
         "skillname":"PostgreSQL",
@@ -154,7 +154,7 @@ let data = {
       },
       {
         "name":"project3",
-        "description":"mobileapp",  
+        "description":"mobileapp",
         "imgurl":"images/portfolio/project2.png"
       },
       {
@@ -164,5 +164,5 @@ let data = {
       }
     ]
   }
-  
+
   export default data

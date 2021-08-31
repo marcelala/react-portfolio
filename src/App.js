@@ -1,16 +1,15 @@
-import './styles/css/index.css';
-import Header from './components/Header';
-import NavBar from './components/NavBar';
-import About from './components/About';
+import "./styles/css/index.css";
+import Nav from "./components/Nav";
+import Hero from "./screens/Hero";
+import About from "./screens/About";
 
 function App() {
-  return (
-    <div className="App">
-      <NavBar/>
-      <Header/>
-      <About/>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Nav />
+			<Hero />
+			<About />
+		</div>
+	);
 }
-
 export default App;

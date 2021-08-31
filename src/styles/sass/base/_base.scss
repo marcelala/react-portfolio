@@ -23,7 +23,7 @@ html {
 		font-size:50%; // 1rem=8px 8/16 *100 = 50%
 	}
 
-	
+
 }
 
 body {
@@ -40,6 +40,7 @@ body {
 
 section{
 		padding:7rem 0;
+		height:100vh;
 
 		@include respond(tab-port) {
 		padding:3rem 0;

@@ -1,13 +1,11 @@
 import React from "react";
 
-import Background from "./Background.jsx";
-import TypedText from "./TypedText.jsx";
+import TypedText from "./anti-requirements/TypedText.jsx";
 
 
-export default function Header(props) {
+export default function Hero(props) {
 return(
     <section className="header">
-        <Background/>
         <div className="header__content">
         <div className="header__text-box">
 			<h1 className="heading-primary">
