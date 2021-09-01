@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-scroll';
-import Brand  from "../assets/img/MF.png"
+import Brand  from "../assets/img/logos/MF.png"
 
 
 export default function Nav() {
