@@ -1,4 +1,4 @@
-let techData = [
+const techData = [
 	{
 		"name": "Javascript",
 		"icon": "javascript.svg",
@@ -56,3 +56,4 @@ let techData = [
 		"icon": "recoil.svg",
 	},
 ];
+export default techData;

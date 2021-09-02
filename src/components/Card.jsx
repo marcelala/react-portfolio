@@ -24,7 +24,7 @@ function Card({ project }) {
 					<h3>{project.title}</h3>
 				</label>
 			</button>
-			{isActive && (
+			{isActive&& (
 				<Modal project={project} handleClose={() => setActive(false)} />
 			)}
 		</li>
@@ -35,5 +35,6 @@ Card.propTypes = {
 	thumbnail: PropTypes.string,
 	title: PropTypes.string,
 	project: PropTypes.object,
+	isReleased: Boolean,
 };
 export default Card;

@@ -1,4 +1,4 @@
-let projectData = [
+const projectData = [
 	{
 		"title": "Plant is food: Vegan Restaurant Website",
 		"text": "This project is about A, B, C where users can do D, E, F, so they can obtain G, H, I benefit. It uses:",
@@ -7,6 +7,7 @@ let projectData = [
 		"picture": "0-VeganRestaurant.png",
 		"url": "https://www.plantisfood.com/",
 		"repo": "https://github.com/marcelala",
+		"isReleased": "false"
 	},
 	{
 		"title": "Busy bees:Package tracker",
@@ -16,6 +17,8 @@ let projectData = [
 		"picture": "1-BusyBees.png",
 		"url": "https://busy-bees-tracking.web.app/",
 		"repo": "https://github.com/marcelala",
+		"isReleased": "true"
+
 	},
 	{
 		"title": "EIKA: To-Do List TDD",
@@ -33,6 +36,8 @@ let projectData = [
 		"picture": "2-EIKA.png",
 		"url": "https://github.com/marcelala/shopping-list",
 		"repo": "https://github.com/marcelala",
+		"isReleased": "true"
+
 	},
 	{
 		"title": "E-commerce",
@@ -42,6 +47,8 @@ let projectData = [
 		"picture": "3-Commerce.png",
 		"url": "https://consciouscraft.uk/",
 		"repo": "https://github.com/marcelala",
+		"isReleased": "false"
+
 	},
 	{
 		"title": "Vegan BBQ Restaurant Website",
@@ -51,6 +58,7 @@ let projectData = [
 		"picture": "4-BBQ.png",
 		"url": "https://grassvbqjoint.com/",
 		"repo": "https://github.com/marcelala",
+		"isReleased": "false"
 	},
 	{
 		"title": "Learning Platform",
@@ -68,6 +76,7 @@ let projectData = [
 		"picture": "5-Learning.png",
 		"url": "https://www.skillshare.com/",
 		"repo": "https://github.com/marcelala",
+		"isReleased": "false"
 	},
 	{
 		"title": "Bestflix",
@@ -77,5 +86,7 @@ let projectData = [
 		"picture": "6-Bestflix.png",
 		"url": "https://www.netflix.com/",
 		"repo": "https://github.com/marcelala",
-	},
+		"isReleased": "false"
+	}
 ];
+export default projectData;

@@ -1,4 +1,4 @@
-let contactData = [
+const contactData = [
 	{
 		"name": "email",
 		"icon": "envelop.svg",
@@ -29,4 +29,4 @@ let contactData = [
 		"icon": "twitter.svg",
 		"url": "https://github.com/marcelala",
 	},
-];
+]; export default contactData;

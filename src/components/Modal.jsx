@@ -8,7 +8,7 @@ import Pills from "./Pills";
 import { Button } from "react-scroll";
 
 export default function Modal({ project, handleClose }) {
-	const { title, text, picture, index, repo, url, techUsed } = project;
+	const { title, text, picture, index, repo, url, techUsed, isReleased } = project;
 	const screenshot = require(`../assets/img/project-images/pictures/${picture}`);
 	const pictureURL = screenshot.default;
 	const closeIcon = require(`../assets/img/icons/close.svg`);
