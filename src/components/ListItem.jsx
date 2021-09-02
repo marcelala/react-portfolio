@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function ListItem({ props }) {
-	const imageObject = require(`../assets/icons/${props.fileName}`);
+	const imageObject = require(`../assets/img/icons/${props.fileName}`);
 	const imageURL = imageObject.default;
 	return (
 		<li>

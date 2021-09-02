@@ -1,24 +1,32 @@
 // npm packages
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-
-function Card({ props }) {
-    const thumbnailObject = require(`../assets/project-images/thumbnails/${props.thumbnail}`);
-	const picture = require(`../assets/project-images/pictures/${props.fileName}`);
-
-    const thumbnailURL = thumbnailObject.default;
-    const pictureURL = picture.default;
-
+//project files
+import Modal from "./Modal";
+function Card({ project }) {
+	const [isActive, setActive] = useState(false);
+	const thumbnailObject = require(`../assets/project-images/thumbnails/${project.thumbnail}`);
+	const thumbnailURL = thumbnailObject.default;
 	return (
-		<li>
-			<label htmlFor="project-title" className="project-title">
-				<img
-					src={thumbnailURL}
-					className={"thumbnail" + props.index}
-					alt={"thumbnail of project" + props.tile}
-				/>
-				{props.title}
-			</label>
+		<li key={project.index}>
+			<button disabled={!project.isReleased} onClick={() => setActive(true)}>
+				<label htmlFor="project-title" className="project-title">
+					{!project.isReleased && (
+						<div className="overlay">
+							<h3>Coming soon</h3>
+						</div>
+					)}
+					<img
+						src={thumbnailURL}
+						className={"thumbnail" + project.index}
+						alt={"thumbnail of project" + project.title}
+					/>
+					<h3>{project.title}</h3>
+				</label>
+			</button>
+			{isActive && (
+				<Modal project={project} handleClose={() => setActive(false)} />
+			)}
 		</li>
 	);
 }
@@ -26,6 +34,6 @@ function Card({ props }) {
 Card.propTypes = {
 	thumbnail: PropTypes.string,
 	title: PropTypes.string,
+	project: PropTypes.object,
 };
-
 export default Card;

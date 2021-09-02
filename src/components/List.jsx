@@ -8,11 +8,7 @@ export default function List({ props }) {
 			{item}
 		</li>
 	));
-	return (
-		<div className="list">
-			<ul>{List}</ul>
-		</div>
-	);
+	return <ul>{List}</ul>;
 }
 List.propTypes = {
 	itemType: PropTypes.string,
