@@ -6,9 +6,7 @@ import About from "./screens/About";
 function App() {
 	return (
 		<div className="App">
-			<Nav />
 			<Hero />
-			<About />
 		</div>
 	);
 }
