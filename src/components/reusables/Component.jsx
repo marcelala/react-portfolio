@@ -9,7 +9,7 @@ function Component({ props }) {
 	return (
         <div className="component">
             <TitleAndDescription title={props.title} description={ props.description}/>
-            <List itemType={props.itemType}>{props.children}</List>
+            <List> {props.children} </List>
         </div>
 	);
 }
