@@ -6,14 +6,16 @@ function ListItem({ item, itemType }) {
 	const imageObject = require(`../../assets/img/icons/${item.icon}`);
 	const imageURL = imageObject.default;
 	return (
-		<label htmlFor="icon-name" className="icon-name">
-			<img
-				src={imageURL}
-				className={"icon" + itemType}
-				alt={"icon of"+ item.name}
-			/>
-			{item.label}
-		</label>
+		<li className={itemType}>
+			<label htmlFor="icon-name" className="icon-name">
+				<img
+					src={imageURL}
+					className={"icon" + itemType}
+					alt={"icon of" + item.name}
+				/>
+				<span className="label">{item.label}</span>
+			</label>
+		</li>
 	);
 }
 ListItem.propTypes = {

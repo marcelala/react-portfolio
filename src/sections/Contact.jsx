@@ -7,6 +7,8 @@ import List from "../components/reusables/List";
 import TitleAndDescription from "../components/reusables/TitleAndDescription";
 
 export default function Contact() {
+	const currentYear = new Date().getFullYear();
+
 	const sectionHeader = {
 		title: "Let's work together",
 		description:
@@ -22,6 +24,7 @@ export default function Contact() {
 				<div className="social-list">
 					<List array={socialData} itemType={"socialItem"} />
 				</div>
+				<p className="copyright">Copyright © Marcela Felix Fortis {currentYear}</p>
 			</footer>
 		</section>
 	);

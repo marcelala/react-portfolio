@@ -7,35 +7,38 @@ import TitleAndDescription from "./reusables/TitleAndDescription";
 import Pills from "./Pills";
 import { Button } from "react-scroll";
 
-export default function Modal({ project, handleClose }) {
-	const { title, text, picture, index, repo, url, techUsed, isReleased } = project;
+export default function Modal({ project, handleClose, isActive }) {
+	const { title, text, picture, index, repo, url, techUsed } = project;
 	const screenshot = require(`../assets/img/project-images/pictures/${picture}`);
 	const pictureURL = screenshot.default;
 	const closeIcon = require(`../assets/img/icons/close.svg`);
 
+	if (!isActive) return null;
+
 	return reactDom.createPortal(
-		<label htmlFor="project-title" className="project-title">
-			<div className="overlay" onClick={handleClose} />
-			<article className="project-modal">
-				<img
-					src={pictureURL}
-					className={"thumbnail" + index}
-					alt={"thumbnail of project" + title}
-				/>
-				<Button theme={"icon"}> {closeIcon} </Button>
-				<TitleAndDescription title={title} description={text} />
-				<Pills data={techUsed} />
-				<a href={url}>
-					<Button theme={"primary"}>Website</Button>
-				</a>
-				<a href={repo}>
-					<Button theme={"secondary"}>Git repository</Button>
-				</a>
-			</article>
-		</label>,
+			<div className="overlay" onClick={handleClose}>
+				<label htmlFor="project-title" className="project-title">
+					<article className="project-modal">
+						<img
+							src={pictureURL}
+							className={"thumbnail" + index}
+							alt={"thumbnail of project" + title}
+						/>
+						<Button theme={"icon"}> {closeIcon} </Button>
+						<TitleAndDescription title={title} description={text} />
+						<Pills data={techUsed} />
+						<a href={url}>
+							<Button theme={"primary"}>Website</Button>
+						</a>
+						<a href={repo}>
+							<Button theme={"secondary"}>Git repository</Button>
+						</a>
+					</article>
+				</label>
+			</div>,
 		document.getElementById("portal")
 	);
-}
+};
 
 Modal.propTypes = {
 	project: PropTypes.object,
@@ -43,6 +46,6 @@ Modal.propTypes = {
 	title: PropTypes.string,
 	description: PropTypes.string,
 	url: PropTypes.string,
-    repo: PropTypes.string,
-    techUsed: PropTypes.array,
+	repo: PropTypes.string,
+	techUsed: PropTypes.array,
 };

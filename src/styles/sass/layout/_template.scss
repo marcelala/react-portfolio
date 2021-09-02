@@ -25,16 +25,32 @@
 .about {
 	grid-area: about;
 	justify-self: center;
+	background-color: $white;
+
 }
 .projects {
 	grid-area: projects;
 	justify-self: center;
+	background-color: $beige-light;
+
 }
 .technologies {
 	grid-area: technologies;
-	justify-self: center;
+	justify-items: center;
+	background-color: $white;
+
 }
 .contact {
 	grid-area: contact;
 	justify-self: center;
+	background-color: $beige-light;
+
+	footer{
+		background-color: $brown-light;
+		color: $beige-light;
+		.label{
+			display: none;
+		}
+	}
+
 }
