@@ -2,12 +2,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import TitleAndDescription from "./TitleAndDescription";
+import List from "./List";
+
 
 function Component({ props }) {
 	return (
         <div className="component">
-            <TitleAndDescription title={props.title} description={props.description} />
-            <List 
+            <TitleAndDescription title={props.title} description={ props.description}/>
+            <List itemType={props.itemType} url= {} />
         </div>
 	);
 }
