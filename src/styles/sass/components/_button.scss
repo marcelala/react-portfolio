@@ -25,11 +25,10 @@
 	}
 
 	&--brown {
-		background-color:$brown;
+		background-color:transparent;
+		outline: $brown;
 		color:$off-white;
 		margin:2.5rem 1rem 0 0;
-
-
 		@include respond(tab-port) {
 			margin:1rem;
 		}
@@ -50,7 +49,7 @@
 		transition:all .2s;
 	}
 
-	
+
 	&--white:hover,
 	&:hover {
 		background-color:$brown;

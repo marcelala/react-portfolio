@@ -3,7 +3,7 @@ import React from "react";
 import reactDom from "react-dom";
 import PropTypes from "prop-types";
 
-import TitleAndDescription from "./TitleAndDescription";
+import TitleAndDescription from "./reusables/TitleAndDescription";
 import Pills from "./Pills";
 import { Button } from "react-scroll";
 
