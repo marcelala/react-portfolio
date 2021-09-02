@@ -1,16 +1,17 @@
 //npm packages
 import PropTypes from "prop-types";
-function TitleAndDescription({ title, description }) {
+function TitleAndDescription({ text }) {
 	return (
 		<div className="text-container">
-			<h2> {title} </h2>
-			<p> {description} </p>
+			<h2> {text.title} </h2>
+			<p> {text.description} </p>
 		</div>
 	);
 }
 TitleAndDescription.propTypes = {
 	title: PropTypes.string,
 	description: PropTypes.string,
+	text: PropTypes.object,
 };
 
 export default TitleAndDescription;

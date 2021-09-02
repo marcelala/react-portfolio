@@ -1,58 +1,58 @@
 const techData = [
 	{
-		"name": "Javascript",
+		"label": "Javascript",
 		"icon": "javascript.svg",
 	},
 	{
-		"name": "React",
+		"label": "React",
 		"icon": "react.svg",
 	},
 	{
-		"name": "Sass",
+		"label": "Sass",
 		"icon": "sass.svg",
 	},
 	{
-		"name": "Vue.js",
+		"label": "Vue.js",
 		"icon": "vue.svg",
 	},
 	{
-		"name": "Java",
+		"label": "Java",
 		"icon": "java.svg",
 	},
 	{
-		"name": "PostgreSQL",
+		"label": "PostgreSQL",
 		"icon": "postgresql.svg",
 	},
 	{
-		"name": "Git",
+		"label": "Git",
 		"icon": "git.svg",
 	},
 	{
-		"name": "Firebase",
+		"label": "Firebase",
 		"icon": "firebase.svg",
 	},
 	{
-		"name": "Docker",
+		"label": "Docker",
 		"icon": "docker.svg",
 	},
 	{
-		"name": "Figma",
+		"label": "Figma",
 		"icon": "figma.svg",
 	},
 	{
-		"name": "SpringBoot",
+		"label": "SpringBoot",
 		"icon": "spring.svg",
 	},
 	{
-		"name": "Jest",
+		"label": "Jest",
 		"icon": "jest.svg",
 	},
 	{
-		"name": "Typescript",
+		"label": "Typescript",
 		"icon": "typescript.svg",
 	},
 	{
-		"name": "Recoil",
+		"label": "Recoil",
 		"icon": "recoil.svg",
 	},
 ];

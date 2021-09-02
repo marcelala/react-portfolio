@@ -2,26 +2,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function ListItem({ item, itemType, text }) {
-	const imageObject = require(`../assets/img/icons/${item.name}`);
+function ListItem({ item, itemType }) {
+	const imageObject = require(`../../assets/img/icons/${item.icon}`);
 	const imageURL = imageObject.default;
 	return (
-		<li>
-			<label htmlFor="icon-name" className="icon-name">
-				<img
-					src={imageURL}
-					className={"icon" + itemType}
-					alt={"logo of the brand" + item.name}
-				/>
-				{text}
-			</label>
-		</li>
+		<label htmlFor="icon-name" className="icon-name">
+			<img
+				src={imageURL}
+				className={"icon" + itemType}
+				alt={"icon of"+ item.name}
+			/>
+			{item.label}
+		</label>
 	);
 }
 ListItem.propTypes = {
-	filename: PropTypes.string,
-	name: PropTypes.string,
+	icon: PropTypes.string,
+	label: PropTypes.string,
 	itemType: PropTypes.string,
-	url: PropTypes.string,
+	name: PropTypes.string,
 };
 export default ListItem;
