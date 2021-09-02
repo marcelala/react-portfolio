@@ -1,19 +1,22 @@
 .hero {
 	overflow: hidden;
 	width: 100%;
-  &-content {
-		position: relative;
-    margin: auto;
-	}
-
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	&-text-box {
 		position: relative;
-		top: 50%;
-
+		margin: auto;
 	}
-
 	&-btn-box {
 		position: relative;
-		top: 80%;
+		margin: auto;
+	}
+	.type-wrap {
+		display: flex;
+		justify-content: center;
+		display: relative;
+		margin: auto;
 	}
 }

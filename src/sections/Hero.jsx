@@ -5,10 +5,10 @@ import wallpaper from "../assets/img/grass1.jpg";
 
 export default function Hero(props) {
 	return (
+		<div className="background">
 		<section className="hero">
-			<div className="background">
+
 				<img className="background__image" src={wallpaper} alt="background" />
-				<div className="hero-content">
 					<div className="hero-text-box">
 						<h1 className="heading-primary">
 							<span className="heading-primary--main">Hello, I'm </span>
@@ -24,8 +24,7 @@ export default function Hero(props) {
 							Get to know me
 						</a>
 					</div>
-				</div>
-			</div>
 		</section>
+			</div>
 	);
 }

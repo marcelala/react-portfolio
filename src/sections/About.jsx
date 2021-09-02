@@ -1,22 +1,20 @@
 import React from "react";
 
 import data from "../data/data";
-import me from "../assets/img/about.png";
+import MyPhoto from "../assets/img/about.png";
+import TitleAndDescription from "../components/reusables/TitleAndDescription";
 
 export default function About() {
-	const { aboutme } = data;
+	const { aboutMe } = data;
 
 	return (
 		<section className="about">
 			<div className="row">
 				<div className="col-1-of-2">
-					<h1 className="heading-primary--main">
-						<div className="u-align-center u-margin-bottom-big">About me</div>
-					</h1>
-					<p className="paragraph">{aboutme}</p>
+					<TitleAndDescription title="Who am I?" description={aboutMe} />
 				</div>
 				<div className="col-1-of-2">
-					<img src={me} alt="woman" className="about__image" />
+					<img src={MyPhoto} alt="woman" className="about__image" />
 				</div>
 			</div>
 		</section>

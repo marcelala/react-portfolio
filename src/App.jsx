@@ -1,4 +1,4 @@
-import "./styles/index.css";
+import "./styles/css/index.css";
 import Nav from "./components/Nav";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
@@ -6,7 +6,9 @@ import About from "./sections/About";
 function App() {
 	return (
 		<div className="App">
-			<Hero/>
+			<Nav/>
+			<Hero />
+			<About/>
 		</div>
 	);
 }

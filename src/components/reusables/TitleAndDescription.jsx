@@ -1,10 +1,10 @@
 //npm packages
 import PropTypes from "prop-types";
-function TitleAndDescription({ props }) {
+function TitleAndDescription({ title, description }) {
 	return (
 		<div className="text-container">
-			<h2> {props.title} </h2>
-			<p> {props.description} </p>
+			<h2> {title} </h2>
+			<p> {description} </p>
 		</div>
 	);
 }
