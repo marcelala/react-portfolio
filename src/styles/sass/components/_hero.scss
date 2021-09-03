@@ -5,6 +5,9 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 0;
+	padding:0;
+	
 	&-text-box {
 		position: relative;
 		margin: auto;

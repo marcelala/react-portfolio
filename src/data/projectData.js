@@ -7,7 +7,7 @@ const projectData = [
 		"picture": "0-VeganRestaurant.png",
 		"url": "https://www.plantisfood.com/",
 		"repo": "https://github.com/marcelala",
-		"isReleased": "false"
+		"isReleased": false
 	},
 	{
 		"title": "Busy bees",
@@ -17,7 +17,7 @@ const projectData = [
 		"picture": "1-BusyBees.png",
 		"url": "https://busy-bees-tracking.web.app/",
 		"repo": "https://github.com/marcelala",
-		"isReleased": "true"
+		"isReleased": true
 
 	},
 	{
@@ -36,7 +36,7 @@ const projectData = [
 		"picture": "2-EIKA.png",
 		"url": "https://github.com/marcelala/shopping-list",
 		"repo": "https://github.com/marcelala",
-		"isReleased": "true"
+		"isReleased": true
 
 	},
 	{
@@ -47,7 +47,7 @@ const projectData = [
 		"picture": "3-Commerce.png",
 		"url": "https://consciouscraft.uk/",
 		"repo": "https://github.com/marcelala",
-		"isReleased": "false"
+		"isReleased": false
 
 	},
 	{
@@ -58,7 +58,7 @@ const projectData = [
 		"picture": "4-BBQ.png",
 		"url": "https://grassvbqjoint.com/",
 		"repo": "https://github.com/marcelala",
-		"isReleased": "false"
+		"isReleased": false
 	},
 	{
 		"title": "Learning Platform",
@@ -76,7 +76,7 @@ const projectData = [
 		"picture": "5-Learning.png",
 		"url": "https://www.skillshare.com/",
 		"repo": "https://github.com/marcelala",
-		"isReleased": "false"
+		"isReleased": false
 	},
 	{
 		"title": "Bestflix",
@@ -86,7 +86,7 @@ const projectData = [
 		"picture": "6-Bestflix.png",
 		"url": "https://www.netflix.com/",
 		"repo": "https://github.com/marcelala",
-		"isReleased": "false"
+		"isReleased": false
 	}
 ];
 export default projectData;

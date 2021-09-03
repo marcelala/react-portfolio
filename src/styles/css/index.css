@@ -96,15 +96,13 @@ span {
   background: transparent;
   background-position: top;
   background-size: cover;
-  overflow: hidden;
 }
 .background__image {
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   -webkit-mask-image: radial-gradient(white 0%, white 30%, transparent 90%, transparent);
@@ -166,7 +164,7 @@ span {
   max-height: 8vh;
   overflow: hidden;
   color: #fff;
-  z-index: 50;
+  z-index: 99;
   padding: 0.9rem;
   display: flex;
   justify-content: center;
@@ -290,6 +288,8 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 .hero-text-box {
   position: relative;
@@ -365,7 +365,7 @@ span {
 }
 .projects ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   grid-gap: 1rem;
   padding: 1rem 0.5rem;
   justify-items: center;
@@ -377,12 +377,21 @@ span {
   background-color: transparent;
   outline: transparent;
   border-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+.projects li button:disabled img {
+  filter: brightness(0.7);
+}
+.projects li button div {
+  position: relative;
 }
 .projects li img {
   height: 7.2rem;
   width: 9.3rem;
   padding: 0;
   border-radius: 1rem;
+  cursor: pointer;
 }
 .projects li img:hover {
   outline: none;
@@ -392,9 +401,30 @@ span {
 .projects li h3 {
   color: #7B430A;
   font-weight: 500;
+  cursor: pointer;
+}
+.projects li .overlay {
+  background-color: #FBF1D9;
+  opacity: 0.4;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  z-index: 100;
+  -o-object-fit: cover;
+     object-fit: cover;
+  text-align: center;
+  height: 7.2rem;
+  width: 9.3rem;
+  padding: 0;
+  border-radius: 1rem;
 }
 .projects li .overlay h3 {
   position: absolute;
+  text-transform: uppercase;
+  z-index: 900;
+  opacity: 1;
+  color: #7B430A;
+  font-size: 1.5rem;
 }
 
 .modal-container {
