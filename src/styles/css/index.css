@@ -276,6 +276,7 @@ span {
 .hero .h1 {
   padding: 0.4rem;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 .hero .h1-name {
   font-family: "Satisfy", serif;
@@ -291,6 +292,7 @@ span {
   justify-content: center;
   position: relative;
   margin: auto;
+  font-weight: 500;
 }
 
 .about {
