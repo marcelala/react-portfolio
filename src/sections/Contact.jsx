@@ -16,15 +16,19 @@ export default function Contact() {
 	};
 	return (
 		<section className="contact">
-			<TitleAndDescription text={sectionHeader} />
-			<div className="contact-list">
-				<List array={contactData} itemType={"contactItem"} />
+			<div className="contact-section">
+				<TitleAndDescription text={sectionHeader} />
+				<div className="contact-list">
+					<List array={contactData} itemType={"contactItem"} />
+				</div>
 			</div>
 			<footer>
 				<div className="social-list">
 					<List array={socialData} itemType={"socialItem"} />
 				</div>
-				<p className="copyright">Copyright © Marcela Felix Fortis {currentYear}</p>
+				<p className="copyright">
+					© Marcela Felix Fortis {"   "} {currentYear}
+				</p>
 			</footer>
 		</section>
 	);

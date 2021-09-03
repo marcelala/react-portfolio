@@ -365,13 +365,47 @@ span {
 }
 
 .contact {
+  display: block;
+}
+
+.contact-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-items: center;
 }
+.contact-section .contact-list {
+  display: grid;
+  grid-gap: 1rem;
+  justify-items: start;
+}
+.contact-section label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section span {
+  font-size: 1rem;
+  margin: 0.5 0;
+}
+.contact-section img {
+  margin: 0.5rem;
+}
 
 footer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 5.3rem;
+  margin: 1rem 0;
+}
+footer p {
+  font-size: 0.7rem;
+}
+
+.social-list ul {
+  display: flex;
+}
+.social-list li {
+  margin: 0.5rem;
 }/*# sourceMappingURL=index.css.map */
