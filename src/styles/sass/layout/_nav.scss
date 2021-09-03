@@ -1,39 +1,81 @@
 .nav {
 	position: fixed;
 	width: 100%;
-    height: 1.87;
+	height: 1.87;
 	max-height: 8vh;
-    overflow: hidden;
+	overflow: hidden;
 	color: $white;
-	z-index: 50;
-	padding: .9rem;
+	z-index: 99;
+	padding: 0rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    margin-bottom:1rem;
-    background-color: rgba(252, 249, 247, 0.473);
-
+	margin-bottom: 1rem;
+	background-color: rgba(252, 249, 247, 0.473);
 
 	img {
 		height: 2rem;
 		cursor: pointer;
 	}
 	ul {
-        list-style: none;
+		list-style: none;
 		display: flex;
 		justify-content: center;
 		background-color: rgba(112, 75, 32, 0.829);
 		border-radius: 44px;
 		align-items: center;
 		text-align: center;
-        padding: 0 1.5rem;
+		padding: 0 1.5rem;
+		margin-top: 0.5rem;
+					@media screen and (min-device-width: 768px) {
+				width: 100%;
+				border-radius:0;
+				padding: 0;
+				margin:0;
+				height: 8rem;
+			}
 		a {
-			font-size: .6rem;
+			font-size: 0.6rem;
 			font-weight: 500;
 			text-decoration: none;
 			text-transform: uppercase;
 			cursor: pointer;
-            padding: 0.3rem;
+			padding: 0.3rem;
+			@media screen and (min-device-width: 768px) {
+				justify-content: flex-end;
+				font-size: 1rem;
+				padding:0.7rem;
+				font-weight: 400;;
+			}
+		}
+		.mobile-logo{
+			@media screen and (min-device-width: 768px) {
+				display: none
+			}
+		}
+
+		.desktop-logo{
+			display: none;
+			img{
+				height: 2.8rem;
+				padding:0;
+			}
+			@media screen and (min-device-width: 768px) {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				margin-right:10rem;
+			}
+		}
+		h3{
+			font-family: "Satisfy", serif;
+			color: $off-white;
+			margin-top: 0.2rem;
+			display: none;
+			font-size: 1.3rem;
+			@media screen and (min-device-width: 768px) {
+				display: flex;
+			}
 		}
 	}
 }
