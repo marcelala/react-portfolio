@@ -4,10 +4,18 @@
 	align-items: center;
 	justify-content: center;
 	height: auto;
+	justify-self: center;
+	.section-text {
+		max-width: 90%;
+		padding: 0 1rem;
+		justify-self: center;
+	}
 	ul {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-		grid-gap: 1.3rem;
+		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+		grid-gap: 1rem;
+		padding: 1rem 0.5rem;
+		justify-items: center;
 	}
 	li {
 		position: relative;
@@ -21,6 +29,11 @@
 			width: 9.3rem;
 			padding: 0;
 			border-radius: 1rem;
+			&:hover {
+				outline: none;
+				transform: translateY(-2px);
+				box-shadow: 0 0.5rem 1rem rgba($brown, 0.5);
+			}
 		}
 		h3 {
 			color: $brown;
@@ -36,53 +49,58 @@
 }
 
 .modal-container {
-	background-color: white;
+	background-color: $beige-light;
 	overflow: hidden;
 	position: fixed;
-	height: 100vh;
-	width: 100vw;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 1000;
 	padding: 0rem;
+	padding-bottom: 1rem;
 
 	.btn-close {
 		position: fixed;
-		font-weight: bolder;
-		font-size: 3rem;
 		z-index: 10000;
 		border: none;
 		background-color: transparent;
+		margin: .5rem;
+		cursor: pointer;
+		right: 5%;
+		&:hover {
+			outline: none;
+			transform: translateY(-4px);
+		}
 	}
 }
 
 .modal {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-	grid-gap: 1.3rem;
-	grid-template-areas:
-		"img"
-		"text"
-		"pills"
-		"btnBox";
-		justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 0.2rem;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
 	img {
 		width: 20rem;
 		height: 11.5rem;
 		object-fit: cover;
 		position: relative;
-		grid-area: img;
+		overflow: hidden;
+		justify-self: center;
 	}
-	.section-text {
-		grid-area: text;
-		padding: 0rem;
+	.half{
+		justify-self: center;
+		max-width: 90%;
 	}
-
 	.btn-box {
 		display: flex;
 		flex-direction: column;
-		grid-area: btnBox;
+		justify-self: center;
+		align-self: flex-end;
+		margin-top: 2rem;
+		width: 90;
 	}
 }
 
@@ -92,18 +110,28 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: $light-beige;
+	z-index: 55;
+	background-color: $off-white;
 }
 
 .pills {
-	grid-area: pills;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+	grid-gap: 0.2rem;
+	max-width: 90%;
+	justify-content: center;
+	span {
+		margin: 0.2rem;
+		padding: 0.2rem auto;
+	}
 	li {
 		position: relative;
 		border-radius: 1rem;
-		border: 1px solid $brown;
+		border: 1px solid $brown-light;
 		color: $brown-light;
 		text-align: center;
+		background-color: white;
+		padding: 0.1rem;
+		font-size: 0.8rem;
 	}
 }

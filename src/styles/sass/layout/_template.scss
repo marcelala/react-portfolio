@@ -4,6 +4,9 @@
 	grid: auto-flow min-content / 1fr;
 	grid-gap: 1rem;
 	scroll-behavior: smooth;
+	justify-content: center;
+	width: 100%;
+
 	grid-template-areas:
 		"nav"
 		"hero"
@@ -18,6 +21,8 @@
 }
 .hero {
 	grid-area: hero;
+	margin: 0;
+	padding: 0;
 }
 .about {
 	grid-area: about;
@@ -35,11 +40,11 @@
 	grid-area: contact;
 	background-color: $beige-light;
 
-footer {
+	footer {
 		background-color: $brown-light;
 		color: $beige-light;
 		.label {
 			display: none;
 		}
-}
+	}
 }

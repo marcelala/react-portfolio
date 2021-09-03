@@ -17,15 +17,17 @@ export default function ProjectModal({ project }) {
 	return (
 		<article className="modal">
 			<img src={pictureURL} alt="thumbnail of project" />
-			<TitleAndDescription text={projectHeader} />
-			<Pills data={techUsed} />
-			<div className="btn-box">
-				<a href={url}>
-					<Button theme={"primary"}>Website</Button>
-				</a>
-				<a href={repo}>
-					<Button theme={"secondary"}>Git repository</Button>
-				</a>
+			<div className="half">
+				<TitleAndDescription text={projectHeader} />
+				<Pills data={techUsed} />
+				<div className="btn-box">
+					<a href={url}>
+						<Button theme={"primary"}>Website</Button>
+					</a>
+					<a href={repo}>
+						<Button theme={"secondary"}>Git repository</Button>
+					</a>
+				</div>
 			</div>
 		</article>
 	);

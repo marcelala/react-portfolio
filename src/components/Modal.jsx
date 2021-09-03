@@ -10,7 +10,7 @@ export default function Modal({ children, handleClose, active }) {
 		<>
 			<div className="modal-overlay" />
 			<div className= "modal-container">
-				<button onClick={handleClose} className=" btn btn-close">
+				<button onClick={handleClose} className="btn-close">
 					<img src={closeIcon} alt="x"/>
 				</button>
 				{children}

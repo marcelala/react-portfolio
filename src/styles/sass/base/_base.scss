@@ -9,6 +9,8 @@
 html {
 	color: $brown;
 	scroll-behavior: smooth;
+	align-items: center;
+
 }
 
 section {
@@ -16,9 +18,7 @@ section {
 	width: 100%;
 	align-items: center;
 	padding: 1rem 2rem;
-	@include respond(tab-port) {
-		padding: 1rem 0;
-	}
+
 }
 
 article,

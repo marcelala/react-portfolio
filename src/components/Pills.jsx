@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
 export default function Pills({ data }) {
 	const pillList = data.map((tech) => {
 		return (
-			<li className="pill-container">
-					{tech}
-				</li>
+			<span>
+				<li className="pill-container">{tech}</li>
+			</span>
 		);
 	});
 	return <ul className="pills">{pillList}</ul>;
