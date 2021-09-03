@@ -4,11 +4,14 @@
 
 @import "base/_base.scss";
 @import "base/_typography.scss";
-@import "layout/_template.scss";
-@import "layout/_grid.scss";
-
 @import "components/_background.scss";
+@import "layout/_template.scss";
 @import "layout/_nav.scss";
-@import "components/_hero.scss";
+
 @import "components/_button.scss";
+
+@import "components/_hero.scss";
 @import "components/_about.scss";
+@import "components/_projects.scss";
+@import "components/_tech.scss";
+@import "components/_contact.scss";

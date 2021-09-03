@@ -12,6 +12,7 @@
         max-width: 25%;
 		position:absolute;
         margin: auto;
+        align-items: center;
         @include respond(tab-port) {
 			position:relative;
             margin-top:3rem;

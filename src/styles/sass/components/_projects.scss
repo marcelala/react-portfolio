@@ -1,0 +1,25 @@
+.projects{
+    display: flex;
+
+}
+
+.project-list{
+    display: grid;
+    grid: auto-flow min-content / 1fr;
+
+    li{
+        img{
+        height: auto;
+        width: 15rem;
+        padding: 0;
+    }
+
+    .overlay{
+        opacity: 0.6;
+        h3{
+            position: absolute;
+        }
+    }
+    }
+
+}

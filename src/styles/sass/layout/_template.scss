@@ -6,6 +6,7 @@
 	align-content: center;
 	justify-items: center;
 	align-items: center;
+	scroll-behavior: smooth;
 	grid-template-areas:
         "nav"
 		"hero"
@@ -15,7 +16,7 @@
         "contact";
 }
 .nav {
-	grid-area: welcome;
+	grid-area: nav;
 	justify-self: center;
 }
 .hero {
