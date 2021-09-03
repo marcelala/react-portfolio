@@ -1,10 +1,28 @@
-.technologies{
-    display: block;
-}
+.technologies {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
 
-.tech-list{
-    display: grid;
-    grid: auto-flow min-content / 1fr;
-
-
+	ul {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 1.5rem 0.5rem;
+	}
+	.techItem {
+		label {
+			display: inline-flex;
+			flex-direction: column;
+			height: 4.25rem;
+			width: 4.75rem;
+			justify-content: center;
+			align-items: center;
+		}
+		.label {
+			font-size: 0.8rem;
+		}
+		img {
+			height: 2.75rem;
+			margin-bottom: 0.5rem;
+		}
+	}
 }

@@ -8,22 +8,62 @@
 
 
 */
+h1,
+.h1 {
+  font-size: 2.2rem;
+  line-height: 2.56rem;
+}
+
+h2,
+.h2 {
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+}
+
+h3,
+.h3 {
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+.section-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+.section-text h2 {
+  font-weight: 500;
+  padding: 0.5rem;
+}
+.section-text p {
+  font-weight: 400;
+  padding: 0.5rem;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
-  font-weight: 400;
   color: #7B430A;
-  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 section {
   padding: 2rem 0;
   height: 100vh;
   width: 100%;
+  align-items: center;
 }
 @media only screen and (max-width: 48em) {
   section {
@@ -52,36 +92,6 @@ span {
   font-family: "Montserrat", sans-serif;
 }
 
-h1,
-.h1 {
-  font-size: 2.2rem;
-  line-height: 2.56rem;
-}
-
-h2,
-.h2 {
-  font-size: 1.375rem;
-  line-height: 1.75rem;
-}
-
-h3,
-.h3 {
-  font-size: 1rem;
-  line-height: 1.375rem;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.375rem;
-}
-
-.paragraph {
-  font-size: 1.6rem;
-}
-.paragraph:not(:last-child) {
-  margin-bottom: 3rem;
-}
-
 .background {
   width: 100%;
   height: 100%;
@@ -108,45 +118,35 @@ p {
   display: grid;
   grid: auto-flow min-content/1fr;
   grid-gap: 1rem;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
   scroll-behavior: smooth;
   grid-template-areas: "nav" "hero" "about" "projects" "technologies" "contact";
 }
 
 .nav {
   grid-area: nav;
-  justify-self: center;
 }
 
 .hero {
   grid-area: hero;
-  justify-self: center;
 }
 
 .about {
   grid-area: about;
-  justify-self: center;
   background-color: #fff;
 }
 
 .projects {
   grid-area: projects;
-  justify-self: center;
   background-color: #FBF2DB;
 }
 
 .technologies {
   grid-area: technologies;
-  justify-items: center;
   background-color: #fff;
 }
 
 .contact {
   grid-area: contact;
-  justify-self: center;
   background-color: #FBF2DB;
 }
 .contact footer {
@@ -292,9 +292,8 @@ p {
 
 .about {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-items: center;
-  justify-items: center;
   max-width: 100%;
   position: relative;
   margin: auto;
@@ -318,30 +317,61 @@ p {
 }
 
 .projects {
-  display: flex;
-}
-
-.project-list {
   display: grid;
-  grid: auto-flow min-content/1fr;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
 }
-.project-list li img {
+.projects .project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+.projects .project-list li img {
   height: auto;
   width: 15rem;
   padding: 0;
 }
-.project-list li .overlay {
+.projects .project-list li .overlay {
   opacity: 0.6;
 }
-.project-list li .overlay h3 {
+.projects .project-list li .overlay h3 {
   position: absolute;
 }
 
 .technologies {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+}
+.technologies ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem 0.5rem;
+}
+.technologies .techItem label {
+  display: inline-flex;
+  flex-direction: column;
+  height: 4.25rem;
+  width: 4.75rem;
+  justify-content: center;
+  align-items: center;
+}
+.technologies .techItem .label {
+  font-size: 0.8rem;
+}
+.technologies .techItem img {
+  height: 2.75rem;
+  margin-bottom: 0.5rem;
 }
 
-.tech-list {
+.contact {
   display: grid;
-  grid: auto-flow min-content/1fr;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */

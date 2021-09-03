@@ -11,9 +11,7 @@ export default function Tech() {
 	return (
 		<section className="technologies">
 			<TitleAndDescription text={sectionHeader} />
-			<div className="tech-list">
 				<List array={techData} itemType={"techItem"} />
-			</div>
 		</section>
 	);
 }

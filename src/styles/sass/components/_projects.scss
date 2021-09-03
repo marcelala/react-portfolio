@@ -1,25 +1,27 @@
-.projects{
-    display: flex;
+.projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
 
+
+.project-list {
+	display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+
+	li {
+		img {
+			height: auto;
+			width: 15rem;
+			padding: 0;
+		}
+
+		.overlay {
+			opacity: 0.6;
+			h3 {
+				position: absolute;
+			}
+		}
+	}
 }
-
-.project-list{
-    display: grid;
-    grid: auto-flow min-content / 1fr;
-
-    li{
-        img{
-        height: auto;
-        width: 15rem;
-        padding: 0;
-    }
-
-    .overlay{
-        opacity: 0.6;
-        h3{
-            position: absolute;
-        }
-    }
-    }
-
 }

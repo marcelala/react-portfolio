@@ -2,18 +2,20 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+		font-family: "Montserrat", sans-serif;
+
 }
 
 html {
-	font-weight: 400;
 	color: $brown;
-	font-family: "Montserrat", sans-serif;
+	scroll-behavior: smooth;
 }
 
 section {
 	padding: 2rem 0;
 	height: 100vh;
 	width: 100%;
+	align-items: center;
 	@include respond(tab-port) {
 		padding: 1rem 0;
 	}
