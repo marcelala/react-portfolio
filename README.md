@@ -48,7 +48,9 @@ The goal of this project was to build a simple single page application to enable
 ### Requirement gathering
 
 <br/>
+
 [Assignment](https://drive.google.com/file/d/1pQIB7Fgw3D4ZYdcEnvNrFQQQZatCIK2M/view?usp=sharing)
+
 <br/>
 
 ### Project analysis
