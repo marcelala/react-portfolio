@@ -1,4 +1,5 @@
 import React from "react";
+//project files
 import "./styles/css/index.css";
 import Nav from "./components/Nav";
 import Hero from "./sections/Hero";
@@ -13,9 +14,9 @@ function App() {
 			<Nav />
 			<Hero />
 			<About />
-			<Projects/>
+			<Projects />
 			<Tech />
-			<Contact/>
+			<Contact />
 		</div>
 	);
 }

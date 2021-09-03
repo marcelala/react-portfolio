@@ -13,9 +13,8 @@
 	ul {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 1.5rem 0.4rem;
-	padding: 1rem 2rem;
-
+		grid-gap: 1.5rem 0.3rem;
+		padding: 1rem;
 	}
 	.techItem {
 		label {

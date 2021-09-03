@@ -1,7 +1,8 @@
 .contact {
-	display: block;
-		height: auto;
-	max-height: 92vh;
+	height: auto;
+	position: relative;
+	margin: 0;
+	padding: 0;
 }
 .contact-section {
 	display: grid;
@@ -30,13 +31,14 @@
 }
 
 footer {
+	position: relative;
 	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	height: 5.3rem;
-	margin: 1rem 0;
+	margin: 0;
 
 	p {
 		font-size: 0.7rem;
@@ -48,5 +50,11 @@ footer {
 	}
 	li {
 		margin: 0.5rem;
+		cursor: pointer;
+			&:hover {
+		outline: none;
+		transform: translateY(-2px);
+		box-shadow: 0 .5rem 1rem rgba($brown, 0.5);
+	}
 	}
 }

@@ -1,18 +1,18 @@
 const socialData = [
 	{
-		name: "linkedin",
-		icon: "linkedin.svg",
-		label: "https://www.linkedin.com/in/marcela-fortis",
+		"label": "linkedin",
+		"icon": "linkedin.svg",
+		"name": "https://www.linkedin.com/in/marcela-fortis",
 	},
 	{
-		name: "github",
-		icon: "github.svg",
-		label: "https://github.com/marcelala",
+		"label": "github",
+		"icon": "github.svg",
+		"name": "https://github.com/marcelala",
 	},
 	{
-		name: "twitter",
-		icon: "twitter.svg",
-		label: "https://github.com/marcelala",
+		"label": "twitter",
+		"icon": "twitter.svg",
+		"name": "https://github.com/marcelala",
 	},
 ];
 export default socialData;

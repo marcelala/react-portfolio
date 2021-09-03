@@ -11,13 +11,13 @@ export default function ProjectCard({ project }) {
 	const thumbnailURL = thumbnailObject.default;
 	return (
 		<li>
-			<button disabled={isReleased===false} onClick={() => setActive(true)}>
+			<button disabled={isReleased === false} onClick={() => setActive(true)}>
 				<label htmlFor="project-title" className="project">
-					{!isReleased &&
+					{!isReleased && (
 						<div className="overlay">
 							<h3>Coming soon</h3>
 						</div>
-					}
+					)}
 					<img
 						src={thumbnailURL}
 						className={"thumbnail"}
@@ -27,10 +27,8 @@ export default function ProjectCard({ project }) {
 				</label>
 			</button>
 
-			<Modal
-				handleClose={() => setActive(false)}
-				active={isActive}>
-				<ProjectModal project={ project}/>
+			<Modal handleClose={() => setActive(false)} active={isActive}>
+				<ProjectModal project={project} />
 			</Modal>
 		</li>
 	);

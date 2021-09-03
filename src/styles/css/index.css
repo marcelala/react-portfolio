@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 /* MEDIA QUERY BREAKPOINTS
     0-576px for portrait phones.
     577-768px for tablets in portrait mode.
@@ -92,7 +93,7 @@ span {
 
 .background {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: transparent;
   background-position: top;
   background-size: cover;
@@ -114,7 +115,7 @@ span {
   font-family: "Montserrat", sans-serif;
   display: grid;
   grid: auto-flow min-content/1fr;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
   scroll-behavior: smooth;
   justify-content: center;
   width: 100%;
@@ -382,7 +383,6 @@ span {
   align-items: center;
   max-width: 100%;
   position: relative;
-  margin-top: 2rem;
   margin: auto;
   height: auto;
   justify-content: center;
@@ -416,9 +416,9 @@ span {
 }
 .projects ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
   grid-gap: 1rem;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   justify-items: center;
 }
 .projects li {
@@ -582,8 +582,8 @@ span {
 .technologies ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem 0.4rem;
-  padding: 1rem 2rem;
+  grid-gap: 1.5rem 0.3rem;
+  padding: 1rem;
 }
 .technologies .techItem label {
   display: inline-flex;
@@ -602,9 +602,10 @@ span {
 }
 
 .contact {
-  display: block;
   height: auto;
-  max-height: 92vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .contact-section {
@@ -634,13 +635,14 @@ span {
 }
 
 footer {
+  position: relative;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 5.3rem;
-  margin: 1rem 0;
+  margin: 0;
 }
 footer p {
   font-size: 0.7rem;
@@ -651,4 +653,10 @@ footer p {
 }
 .social-list li {
   margin: 0.5rem;
+  cursor: pointer;
+}
+.social-list li:hover {
+  outline: none;
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(123, 67, 10, 0.5);
 }/*# sourceMappingURL=index.css.map */
