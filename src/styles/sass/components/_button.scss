@@ -53,6 +53,7 @@
 		color: $white;
 		box-shadow: 0 1rem 2rem rgba($black, 0.5);
 		transform: translateY(-3px);
+
 	}
 
 	&--white:active,
@@ -70,4 +71,30 @@
 	&--white:hover {
 		border-bottom: 1px solid transparent;
 	}
+}
+
+.btn-primary,
+.btn-secondary {
+	width: 19.4rem;
+	height: 2.75rem;
+	border: 2px solid $brown;
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0.2rem;
+	cursor: pointer;
+	&:hover {
+		outline: none;
+		transform: translateY(-2px);
+		box-shadow: 0 .5rem 1rem rgba($brown, 0.5);
+	}
+}
+
+.btn-primary {
+	background-color: $brown;
+	color: white;
+}
+
+.btn-secondary {
+	background-color: $white;
+	color: $brown;
 }
