@@ -50,5 +50,11 @@ footer {
 	}
 	li {
 		margin: 0.5rem;
+		cursor: pointer;
+			&:hover {
+		outline: none;
+		transform: translateY(-2px);
+		box-shadow: 0 .5rem 1rem rgba($brown, 0.5);
+	}
 	}
 }

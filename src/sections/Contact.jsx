@@ -8,12 +8,27 @@ import TitleAndDescription from "../components/reusables/TitleAndDescription";
 
 export default function Contact() {
 	const currentYear = new Date().getFullYear();
-
 	const sectionHeader = {
 		title: "Let's work together",
 		description:
 			"Here is my contact information in case you would like to start a collaboration.",
 	};
+
+	const socialList = socialData.map((item) => {
+		const imageObject = require(`../assets/img/icons/${item.icon}`);
+		const imageURL = imageObject.default;
+		return (
+			<li>
+				<a href={item.name}>
+					<label htmlFor="icon-name" className="icon-name">
+						<img src={imageURL} alt={"icon of " + item.label} />
+						<span className="label">{item.label}</span>
+					</label>
+				</a>
+			</li>
+		);
+	});
+
 	return (
 		<section className="contact">
 			<div className="contact-section">
@@ -23,9 +38,7 @@ export default function Contact() {
 				</div>
 			</div>
 			<footer>
-				<div className="social-list">
-					<List array={socialData} itemType={"socialItem"} />
-				</div>
+				<div className="social-list"><ul>{socialList}</ul></div>
 				<p className="copyright">
 					© Marcela Felix Fortis {"   "} {currentYear}
 				</p>

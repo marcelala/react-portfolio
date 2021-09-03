@@ -7,14 +7,14 @@ function ListItem({ item, itemType }) {
 	const imageURL = imageObject.default;
 	return (
 		<li className={itemType}>
-			<label htmlFor="icon-name" className="icon-name">
-				<img
-					src={imageURL}
-					className={"icon" + itemType}
-					alt={"icon of" + item.name}
-				/>
-				<span className="label">{item.label}</span>
-			</label>
+				<label htmlFor="icon-name" className="icon-name">
+					<img
+						src={imageURL}
+						className={"icon" + itemType}
+						alt={"icon of" + item.name}
+					/>
+					<span className="label">{item.label}</span>
+				</label>
 		</li>
 	);
 }
