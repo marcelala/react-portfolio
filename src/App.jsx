@@ -13,6 +13,7 @@ function App() {
 			<Nav />
 			<Hero />
 			<About />
+			<Projects/>
 			<Tech />
 			<Contact/>
 		</div>

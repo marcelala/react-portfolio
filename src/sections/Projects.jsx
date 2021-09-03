@@ -15,7 +15,7 @@ export default function Projects() {
 	return (
 		<section className="projects">
 			<TitleAndDescription text={sectionHeader} />
-			<div className="projects-list">{Projects}</div>
+			<ul className="projects-list">{Projects}</ul>
 		</section>
 	);
 }

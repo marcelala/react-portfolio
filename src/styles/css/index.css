@@ -37,6 +37,7 @@ p {
   justify-content: center;
   flex-direction: column;
   margin: 0.5rem;
+  align-self: baseline;
 }
 .section-text h2 {
   font-weight: 500;
@@ -60,7 +61,6 @@ html {
 }
 
 section {
-  padding: 2rem 0;
   height: 100vh;
   width: 100%;
   align-items: center;
@@ -297,6 +297,8 @@ span {
   max-width: 100%;
   position: relative;
   margin: auto;
+  height: auto;
+  max-height: 100vh;
 }
 @media only screen and (max-width: 48em) {
   .about {
@@ -320,21 +322,29 @@ span {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-items: center;
-}
-.projects .project-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 1rem;
-}
-.projects .project-list li img {
   height: auto;
-  width: 15rem;
+}
+.projects ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 1.5rem 1rem;
+}
+.projects li button {
+  background-color: transparent;
+  outline: transparent;
+  border-color: transparent;
+}
+.projects li img {
+  height: 7.25rem;
+  width: 9.7rem;
   padding: 0;
+  border-radius: 1rem;
 }
-.projects .project-list li .overlay {
-  opacity: 0.6;
+.projects li h3 {
+  color: #7B430A;
+  font-weight: 500;
 }
-.projects .project-list li .overlay h3 {
+.projects li .overlay h3 {
   position: absolute;
 }
 
@@ -342,6 +352,8 @@ span {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-items: center;
+  height: auto;
+  max-height: 100vh;
 }
 .technologies ul {
   display: grid;
@@ -366,6 +378,8 @@ span {
 
 .contact {
   display: block;
+  height: auto;
+  max-height: 100vh;
 }
 
 .contact-section {

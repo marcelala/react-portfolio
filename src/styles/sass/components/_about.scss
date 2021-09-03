@@ -1,10 +1,12 @@
 .about {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    align-items: center;
+	align-items: center;
 	max-width: 100%;
 	position: relative;
 	margin: auto;
+	height: auto;
+	max-height: 100vh;
 	@include respond(tab-port) {
 		margin-top: 3rem;
 	}
