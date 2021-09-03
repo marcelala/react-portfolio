@@ -31,7 +31,7 @@ export default function Nav() {
 				</li>
 				<div />
 				<li>
-					<a href="#technologies">Tech</a>
+					<a href="#tech">Tech</a>
 				</li>
 				<li>
 					<a href="#contact">Contact</a>
