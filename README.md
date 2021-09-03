@@ -9,7 +9,6 @@ This is my portfolio, welcome! Click [here](https://react-list-eika.web.app/) to
 <br/>
 
 ---
----
 <br/>
 
 ## Table of Contents
@@ -24,7 +23,6 @@ This is my portfolio, welcome! Click [here](https://react-list-eika.web.app/) to
 <br/>
 
 ---
----
 <br/>
 
 ## Specification
@@ -33,7 +31,6 @@ This is my portfolio, welcome! Click [here](https://react-list-eika.web.app/) to
 The goal of this project was to build a simple single page application to enable potential future collaborations with interested parties.
 <br/>
 
----
 ---
 <br/>
 
@@ -47,7 +44,9 @@ The goal of this project was to build a simple single page application to enable
 
 ### Project analysis
 <br/>
+
 [Google Spreadsheets link](https://docs.google.com/spreadsheets/d/1rqY_-tTIsKJLY7MEoDjRlBqIrNm4gEPv/edit?usp=sharing&ouid=114384588886730868506&rtpof=true&sd=true)
+
 <br/>
 
 ### Component tree
@@ -60,10 +59,11 @@ The UI component tree allows to visualize the different parts of the application
 
 ### Design mockup
 <br/>
+
 [Figma mockup](https://www.figma.com/file/dLkOtKExTxGCoQ7YQ3hthf/MyPortfolioProject?node-id=16%3A481)
+
 <br/>
 
-----
 ----
 
 <br/>
@@ -104,7 +104,6 @@ npm run build
 <br/>
 
 ----
-----
 
 <br/>
 
@@ -117,6 +116,7 @@ npm run build
 - The project setup also uses [Webpack](https://webpack.js.org/) for handling all assets, as Webpack offers a custom way of “extending” the concept of `import` beyond JavaScript.
 - [SASS](https://github.com/sass/sass) Sassy CSS for styling
 - [Firebase](https://firebase.google.com/) for hosting the application.
+- [react-typed](https://github.com/ssbeefeater/react-typed)
 
 <br/>
 
@@ -130,7 +130,6 @@ npm run build
 
 <br/>
 
------
 -----
 
 <br/>

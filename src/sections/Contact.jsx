@@ -30,7 +30,7 @@ export default function Contact() {
 	});
 
 	return (
-		<section className="contact">
+		<section className="contact" id="contact">
 			<div className="contact-section">
 				<TitleAndDescription text={sectionHeader} />
 				<div className="contact-list">
@@ -38,7 +38,9 @@ export default function Contact() {
 				</div>
 			</div>
 			<footer>
-				<div className="social-list"><ul>{socialList}</ul></div>
+				<div className="social-list">
+					<ul>{socialList}</ul>
+				</div>
 				<p className="copyright">
 					© Marcela Felix Fortis {"   "} {currentYear}
 				</p>

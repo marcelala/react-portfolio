@@ -14,7 +14,7 @@ export default function Projects() {
 		<ProjectCard project={item} key={index} />
 	));
 	return (
-		<section className="projects">
+		<section className="projects" id="projects">
 			<TitleAndDescription text={sectionHeader} />
 			<ul className="projects-list">{Projects}</ul>
 		</section>

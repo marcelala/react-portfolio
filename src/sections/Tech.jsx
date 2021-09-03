@@ -10,7 +10,7 @@ export default function Tech() {
 		description: "Some of the techology that I like to use:",
 	};
 	return (
-		<section className="technologies">
+		<section className="technologies" id="tech">
 			<TitleAndDescription text={sectionHeader} />
 			<List array={techData} itemType={"techItem"} />
 		</section>

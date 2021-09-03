@@ -6,7 +6,7 @@ import wallpaper from "../assets/img/grass1.jpg";
 export default function Hero() {
 	return (
 		<div className="background">
-			<section className="hero">
+			<section className="hero" id="hero">
 				<img className="background__image" src={wallpaper} alt="background" />
 				<div className="hero-text-box">
 					<span className="h1">Hello, I'm </span>
