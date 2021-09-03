@@ -1,0 +1,37 @@
+.projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+	justify-content: center;
+	height: auto;
+		ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+		grid-gap: 1.3rem;
+	}
+	li {
+		position: relative;
+		button{
+			background-color: transparent;
+			outline: transparent;
+			border-color: transparent;
+		}
+		img {
+			height: 7.2rem;
+			width: 9.3rem;
+			padding: 0;
+			border-radius: 1rem;
+
+		}
+		h3{
+			color:$brown;
+			font-weight: 500;
+		}
+
+		.overlay {
+			h3 {
+				position: absolute;
+			}
+		}
+	}
+}

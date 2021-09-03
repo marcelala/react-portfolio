@@ -1,7 +1,7 @@
 const projectData = [
 	{
-		"title": "Plant is food: Vegan Restaurant Website",
-		"text": "This project is about A, B, C where users can do D, E, F, so they can obtain G, H, I benefit. It uses:",
+		"title": "Plant is food",
+		"text": "Vegan Restaurant Website.This project is about A, B, C where users can do D, E, F, so they can obtain G, H, I benefit. It uses:",
 		"techUsed": ["Javascript", "React", "SaSS", "Figma", "Firebase"],
 		"thumbnail": "0-VeganRestaurant.png",
 		"picture": "0-VeganRestaurant.png",
@@ -10,8 +10,8 @@ const projectData = [
 		"isReleased": "false"
 	},
 	{
-		"title": "Busy bees:Package tracker",
-		"text": "Coming soon",
+		"title": "Busy bees",
+		"text": "Package tracker website. Coming soon",
 		"techUsed": ["Javascript", "React", "SaSS", "Figma", "Firebase"],
 		"thumbnail": "1-BusyBees.png",
 		"picture": "1-BusyBees.png",
@@ -51,8 +51,8 @@ const projectData = [
 
 	},
 	{
-		"title": "Vegan BBQ Restaurant Website",
-		"text": "Coming soon",
+		"title": "Vegan BBQ ",
+		"text": "Restaurant Website. Coming soon",
 		"techUsed": ["Javascript", "React", "SaSS", "Figma", "Firebase"],
 		"thumbnail": "4-BBQ.png",
 		"picture": "4-BBQ.png",
@@ -72,7 +72,7 @@ const projectData = [
 			"Typescript",
 			"Jest",
 		],
-		"thumbnail": "5-Learning.png",
+		"thumbnail": "5-Learning.jpg",
 		"picture": "5-Learning.png",
 		"url": "https://www.skillshare.com/",
 		"repo": "https://github.com/marcelala",

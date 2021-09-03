@@ -1,40 +1,45 @@
 .App {
+	font-family: "Montserrat", sans-serif;
 	display: grid;
 	grid: auto-flow min-content / 1fr;
 	grid-gap: 1rem;
-	justify-content: center;
-	align-content: center;
-	justify-items: center;
-	align-items: center;
+	scroll-behavior: smooth;
 	grid-template-areas:
-        "nav"
+		"nav"
 		"hero"
 		"about"
 		"projects"
-        "technologies"
-        "contact";
+		"technologies"
+		"contact"
+		"footer";
 }
 .nav {
-	grid-area: welcome;
-	justify-self: center;
+	grid-area: nav;
 }
 .hero {
 	grid-area: hero;
-	justify-self: center;
 }
 .about {
 	grid-area: about;
-	justify-self: center;
+	background-color: $white;
 }
 .projects {
 	grid-area: projects;
-	justify-self: center;
+	background-color: $beige-light;
 }
 .technologies {
 	grid-area: technologies;
-	justify-self: center;
+	background-color: $white;
 }
 .contact {
 	grid-area: contact;
-	justify-self: center;
+	background-color: $beige-light;
+
+footer {
+		background-color: $brown-light;
+		color: $beige-light;
+		.label {
+			display: none;
+		}
+}
 }

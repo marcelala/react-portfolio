@@ -12,14 +12,8 @@ export default function About() {
 	}
 	return (
 		<section className="about">
-			<div className="row">
-				<div className="col-1-of-2">
+					<img src={MyPhoto} alt="woman" className="about-image" />
 					<TitleAndDescription text={aboutText} />
-				</div>
-				<div className="col-1-of-2">
-					<img src={MyPhoto} alt="woman" className="about__image" />
-				</div>
-			</div>
 		</section>
 	);
 }

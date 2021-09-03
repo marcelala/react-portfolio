@@ -11,7 +11,7 @@ export default function Tech() {
 	return (
 		<section className="technologies">
 			<TitleAndDescription text={sectionHeader} />
-            <List array={techData} itemType={"techItem"}/>
+				<List array={techData} itemType={"techItem"} />
 		</section>
 	);
 }

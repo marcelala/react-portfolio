@@ -2,7 +2,7 @@
 import PropTypes from "prop-types";
 function TitleAndDescription({ text }) {
 	return (
-		<div className="text-container">
+		<div className="section-text">
 			<h2> {text.title} </h2>
 			<p> {text.description} </p>
 		</div>

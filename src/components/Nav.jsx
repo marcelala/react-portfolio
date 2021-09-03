@@ -1,57 +1,33 @@
 import React from "react";
-import { Link } from "react-scroll";
-import Brand from "../assets/img/logos/MF.png";
+import Logo from "../assets/img/logos/MF-white.png";
 
 export default function Nav() {
+	/*<div className="nav-brand">
+		<img src={Brand} className="nav-brand-logo" alt="M F logo" />
+	</div>
+<div className="owner">Marcela Felix Fortis</div>*/
 	return (
-		<nav id="navbar" className="navbar">
-			<div className="navbar__box">
-				<div className="navbar__navbar-brand">
-					<img
-						src={Brand}
-						className="navbar__navbar-brand-logo"
-						alt="M F logo"
-					/>
-				</div>
-				<div className="navbar__nav">
-					<Link
-						className="navbar__nav-link"
-						activeClass="active"
-						to="Projects"
-						spy={true}
-						smooth={true}
-						duration={1000}>
-						Projects
-					</Link>
-					<Link
-						className="navbar__nav-link"
-						activeClass="active"
-						to="About"
-						spy={true}
-						smooth={true}
-						duration={1000}>
-						About
-					</Link>
-					<Link
-						className="navbar__nav-link"
-						activeClass="active"
-						to="Skills"
-						spy={true}
-						smooth={true}
-						duration={1000}>
-						Skills
-					</Link>
-					<Link
-						className="navbar__nav-link"
-						activeClass="active"
-						to="Contact"
-						spy={true}
-						smooth={true}
-						duration={1000}>
-						Contact
-					</Link>
-				</div>
-			</div>
+		<nav className="nav">
+			<ul className="nav-list">
+				<li>
+					<a href="#about">About</a>
+				</li>
+				<li>
+					<a href="#projects">Projects</a>
+				</li>
+				<li>
+					<a href="#hero">
+						<img src={Logo} alt="Letters MF" />
+					</a>
+				</li>
+				<div />
+				<li>
+					<a href="#technologies">Tech</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
 		</nav>
 	);
 }

@@ -1,49 +1,36 @@
-.heading-primary {
-	color: $brown;
-	margin-bottom: 2.5rem;
-	font-weight: 400;
-
-	&--main {
-		font-size: 4rem;
-		letter-spacing: 0.2rem;
-	}
-
-	&--name {
-		font-family: "Satisfy", serif;
-		font-size: 5rem;
-	}
-
-	&--sub {
-		display: block;
-		font-size: 2.6rem;
-	}
+h1,
+.h1 {
+	font-size: 2.2rem;
+	line-height: 2.56rem;
 }
-
-.heading-secondary {
-	font-size: 3.5rem;
-	text-transform: uppercase;
-	font-weight: 700;
-	background-image: linear-gradient(to right, $off-white, $light-beige);
-	-webkit-background-clip: text;
-	color: transparent;
-	transition: all 1s;
-
-	&:hover {
-		transform: skewY(2deg) skewX(15deg);
-		text-shadow: 0.5rem 2rem 2rem rgba($black, 0.2);
+h2,
+.h2 {
+	font-weight: 500;
+	font-size: 1.375rem;
+	line-height: 1.75rem;
+}
+h3,
+.h3 {
+	font-size: 1rem;
+	line-height: 1.375rem;
+}
+p {
+	font-size: 1rem;
+	line-height: 1.375rem;
+}
+.section-text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0.5rem;
+	align-self: baseline;
+	padding:0 .5rem;
+	h2 {
+		font-weight: 500;
+		padding: 0.5rem;
 	}
-}
-
-.heading-tertiary {
-	font-size: $default-font-size;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.paragraph {
-	font-size: $default-font-size;
-
-	&:not(:last-child) {
-		margin-bottom: 3rem;
+	p {
+		font-weight: 400;
+		padding: 0.5rem;
 	}
 }
