@@ -121,7 +121,7 @@ span {
   grid: auto-flow min-content/1fr;
   grid-gap: 1rem;
   scroll-behavior: smooth;
-  grid-template-areas: "nav" "hero" "about" "projects" "technologies" "contact";
+  grid-template-areas: "nav" "hero" "about" "projects" "technologies" "contact" "footer";
 }
 
 .nav {
@@ -309,24 +309,25 @@ span {
   max-width: 9rem;
   position: relative;
   margin: auto;
+  margin-bottom: 1rem;
   align-items: center;
-}
-@media only screen and (max-width: 48em) {
-  .about-image {
-    position: relative;
-  }
+  border-radius: 100%;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
+  justify-content: center;
   height: auto;
 }
 .projects ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  grid-gap: 1.5rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-gap: 1.3rem;
+}
+.projects li {
+  position: relative;
 }
 .projects li button {
   background-color: transparent;
@@ -334,8 +335,8 @@ span {
   border-color: transparent;
 }
 .projects li img {
-  height: 7.25rem;
-  width: 9.7rem;
+  height: 7.2rem;
+  width: 9.3rem;
   padding: 0;
   border-radius: 1rem;
 }
@@ -406,6 +407,7 @@ span {
 }
 
 footer {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;

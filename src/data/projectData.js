@@ -72,7 +72,7 @@ const projectData = [
 			"Typescript",
 			"Jest",
 		],
-		"thumbnail": "5-Learning.png",
+		"thumbnail": "5-Learning.jpg",
 		"picture": "5-Learning.png",
 		"url": "https://www.skillshare.com/",
 		"repo": "https://github.com/marcelala",

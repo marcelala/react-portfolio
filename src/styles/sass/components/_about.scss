@@ -11,9 +11,8 @@
 		max-width: 9rem;
 		position: relative;
 		margin: auto;
+		margin-bottom: 1rem;
 		align-items: center;
-		@include respond(tab-port) {
-			position: relative;
-		}
+		border-radius: 100%;
 	}
 }

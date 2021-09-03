@@ -12,8 +12,8 @@ export default function About() {
 	}
 	return (
 		<section className="about">
-					<TitleAndDescription text={aboutText} />
 					<img src={MyPhoto} alt="woman" className="about-image" />
+					<TitleAndDescription text={aboutText} />
 		</section>
 	);
 }

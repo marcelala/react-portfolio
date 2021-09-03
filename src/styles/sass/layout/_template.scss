@@ -10,7 +10,8 @@
 		"about"
 		"projects"
 		"technologies"
-		"contact";
+		"contact"
+		"footer";
 }
 .nav {
 	grid-area: nav;
@@ -34,11 +35,11 @@
 	grid-area: contact;
 	background-color: $beige-light;
 
-	footer {
+footer {
 		background-color: $brown-light;
 		color: $beige-light;
 		.label {
 			display: none;
 		}
-	}
+}
 }
