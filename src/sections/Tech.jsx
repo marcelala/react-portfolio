@@ -1,4 +1,5 @@
 import React from "react";
+//project files
 import techData from "../data/techData";
 import List from "../components/reusables/List";
 import TitleAndDescription from "../components/reusables/TitleAndDescription";
@@ -11,7 +12,7 @@ export default function Tech() {
 	return (
 		<section className="technologies">
 			<TitleAndDescription text={sectionHeader} />
-				<List array={techData} itemType={"techItem"} />
+			<List array={techData} itemType={"techItem"} />
 		</section>
 	);
 }

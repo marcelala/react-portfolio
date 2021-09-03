@@ -13,7 +13,10 @@ export default function Nav() {
 					<a href="#hero">
 						<img src={Logo} alt="Letters MF" />
 					</a>
-					<div className="owner"> <h3>Marcela Felix Fortis</h3></div>
+					<div className="owner">
+						{" "}
+						<h3>Marcela Felix Fortis</h3>
+					</div>
 				</div>
 				<li>
 					<a href="#about">About</a>
