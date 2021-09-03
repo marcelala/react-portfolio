@@ -1,10 +1,10 @@
 // npm packages
 import React from "react";
 
-const Button = ({ handleClick, props }) => {
+const Button = ({ handleClick, children, theme }) => {
 	return (
-		<button className={"btn-" + props.theme} type="button" onClick={handleClick}>
-			{props.children}
+		<button className={"btn-" + theme} type="button" onClick={handleClick}>
+			{children}
 		</button>
 	);
 };

@@ -166,7 +166,7 @@ span {
   max-height: 8vh;
   overflow: hidden;
   color: #fff;
-  z-index: 999;
+  z-index: 99;
   padding: 0.9rem;
   display: flex;
   justify-content: center;
@@ -254,6 +254,11 @@ span {
 }
 .btn-rectangular--white:hover {
   border-bottom: 1px solid transparent;
+}
+
+.btn-primary, .btn-secondary {
+  width: 19.4rem;
+  height: 2.75rem;
 }
 
 .hero {
@@ -346,6 +351,74 @@ span {
 }
 .projects li .overlay h3 {
   position: absolute;
+}
+
+.modal-container {
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  padding: 0rem;
+}
+.modal-container .btn-close {
+  position: fixed;
+  font-weight: bolder;
+  font-size: 3rem;
+  z-index: 10000;
+  border: none;
+  background-color: transparent;
+}
+
+.modal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-gap: 1.3rem;
+  grid-template-areas: "img" "text" "pills" "btnBox";
+  justify-content: center;
+}
+.modal img {
+  width: 20rem;
+  height: 11.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  grid-area: img;
+}
+.modal .section-text {
+  grid-area: text;
+  padding: 0rem;
+}
+.modal .btn-box {
+  display: flex;
+  flex-direction: column;
+  grid-area: btnBox;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #DFAC63;
+}
+
+.pills {
+  grid-area: pills;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+}
+.pills li {
+  position: relative;
+  border-radius: 1rem;
+  border: 1px solid #7B430A;
+  color: #B77423;
+  text-align: center;
 }
 
 .technologies {

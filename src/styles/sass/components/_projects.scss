@@ -4,14 +4,14 @@
 	align-items: center;
 	justify-content: center;
 	height: auto;
-		ul {
+	ul {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 		grid-gap: 1.3rem;
 	}
 	li {
 		position: relative;
-		button{
+		button {
 			background-color: transparent;
 			outline: transparent;
 			border-color: transparent;
@@ -21,10 +21,9 @@
 			width: 9.3rem;
 			padding: 0;
 			border-radius: 1rem;
-
 		}
-		h3{
-			color:$brown;
+		h3 {
+			color: $brown;
 			font-weight: 500;
 		}
 
@@ -33,5 +32,78 @@
 				position: absolute;
 			}
 		}
+	}
+}
+
+.modal-container {
+	background-color: white;
+	overflow: hidden;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+	padding: 0rem;
+
+	.btn-close {
+		position: fixed;
+		font-weight: bolder;
+		font-size: 3rem;
+		z-index: 10000;
+		border: none;
+		background-color: transparent;
+	}
+}
+
+.modal {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	grid-gap: 1.3rem;
+	grid-template-areas:
+		"img"
+		"text"
+		"pills"
+		"btnBox";
+		justify-content: center;
+	img {
+		width: 20rem;
+		height: 11.5rem;
+		object-fit: cover;
+		position: relative;
+		grid-area: img;
+	}
+	.section-text {
+		grid-area: text;
+		padding: 0rem;
+	}
+
+	.btn-box {
+		display: flex;
+		flex-direction: column;
+		grid-area: btnBox;
+	}
+}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: $light-beige;
+}
+
+.pills {
+	grid-area: pills;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+	li {
+		position: relative;
+		border-radius: 1rem;
+		border: 1px solid $brown;
+		color: $brown-light;
+		text-align: center;
 	}
 }
