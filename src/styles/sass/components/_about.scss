@@ -1,22 +1,22 @@
-.about{
-        display: block;
-        max-width: 100%;
-        position: relative;
-        margin: auto;
-        justify-content: center;
-        @include respond(tab-port) {
-            margin-top:3rem;
-        }
-
-    &__image{
-        max-width: 25%;
-		position:absolute;
-        margin: auto;
-        align-items: center;
-        @include respond(tab-port) {
-			position:relative;
-            margin-top:3rem;
-
-    }
-}
+.about {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	align-items: center;
+	justify-items: center;
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+	@include respond(tab-port) {
+		margin-top: 3rem;
+	}
+	&-image {
+		max-width: 10rem;
+		position: absolute;
+		margin: auto;
+		align-items: center;
+		@include respond(tab-port) {
+			position: relative;
+			margin-top: 3rem;
+		}
+	}
 }

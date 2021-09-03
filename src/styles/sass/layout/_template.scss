@@ -1,4 +1,5 @@
 .App {
+	font-family: "Montserrat", sans-serif;
 	display: grid;
 	grid: auto-flow min-content / 1fr;
 	grid-gap: 1rem;
@@ -8,12 +9,12 @@
 	align-items: center;
 	scroll-behavior: smooth;
 	grid-template-areas:
-        "nav"
+		"nav"
 		"hero"
 		"about"
 		"projects"
-        "technologies"
-        "contact";
+		"technologies"
+		"contact";
 }
 .nav {
 	grid-area: nav;
@@ -27,31 +28,27 @@
 	grid-area: about;
 	justify-self: center;
 	background-color: $white;
-
 }
 .projects {
 	grid-area: projects;
 	justify-self: center;
 	background-color: $beige-light;
-
 }
 .technologies {
 	grid-area: technologies;
 	justify-items: center;
 	background-color: $white;
-
 }
 .contact {
 	grid-area: contact;
 	justify-self: center;
 	background-color: $beige-light;
 
-	footer{
+	footer {
 		background-color: $brown-light;
 		color: $beige-light;
-		.label{
+		.label {
 			display: none;
 		}
 	}
-
 }

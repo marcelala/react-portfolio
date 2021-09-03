@@ -9,14 +9,11 @@ export default function Hero(props) {
 			<section className="hero">
 				<img className="background__image" src={wallpaper} alt="background" />
 				<div className="hero-text-box">
-					<h1 className="heading-primary">
-						<span className="heading-primary--main">Hello, I'm </span>
-						{"  "}
-						<span className="heading-primary--name"> Marcela Fortis</span>
-						<span className="heading-primary--sub">
+						<span className="h1">Hello, I'm </span>
+						<span className="h1 h1-name"> Marcela Fortis</span>
+						<div className="h2-sub">
 							<TypedText />
-						</span>
-					</h1>
+						</div>
 				</div>
 				<div className="hero-btn-box">
 					<a href="#About" className="btn btn--brown">
