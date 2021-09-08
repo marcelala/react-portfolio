@@ -65,9 +65,6 @@ The goal of this project was to build a simple single page application to enable
 
 The UI component tree allows to visualize the different parts of the application.
 <br/>
-
-![UI component tree](./src/assets/component-tree.png)
-<br/>
 [View on Whimsical](https://whimsical.com/portfolio-page-M45VgG539Pf4mc2nzd4Fza)
 <br/>
 
