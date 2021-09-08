@@ -64,9 +64,9 @@ html {
 }
 
 section {
-  height: 100vh;
   width: 100%;
   align-items: center;
+  justify-content: center;
   padding: 1rem 2rem;
 }
 
@@ -135,6 +135,7 @@ span {
 .about {
   grid-area: about;
   background-color: #fff;
+  height: 90vh;
 }
 
 .projects {
@@ -166,13 +167,13 @@ span {
   max-height: 8vh;
   overflow: hidden;
   color: #fff;
-  z-index: 99;
+  z-index: 199;
   padding: 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
-  background-color: rgba(252, 249, 247, 0.473);
+  background-color: rgba(252, 249, 247, 0.329);
 }
 .nav img {
   height: 2rem;
@@ -182,7 +183,7 @@ span {
   list-style: none;
   display: flex;
   justify-content: center;
-  background-color: rgba(112, 75, 32, 0.829);
+  background-color: rgba(112, 75, 32, 0.918);
   border-radius: 44px;
   align-items: center;
   text-align: center;
@@ -384,7 +385,6 @@ span {
   max-width: 100%;
   position: relative;
   margin: auto;
-  height: auto;
   justify-content: center;
 }
 .about img {
@@ -399,15 +399,16 @@ span {
   padding: 0 1rem;
   justify-self: center;
   margin: 1rem 0;
+  position: relative;
+  margin: auto;
 }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  align-items: center;
-  justify-content: center;
-  height: auto;
   justify-self: center;
+  align-items: stretch;
+  min-height: 90vh;
 }
 .projects .section-text {
   max-width: 90%;
@@ -420,6 +421,7 @@ span {
   grid-gap: 1rem;
   padding: 0.5rem 0.5rem;
   justify-items: center;
+  position: relative;
 }
 .projects li {
   position: relative;
@@ -479,7 +481,7 @@ span {
 }
 
 .modal-container {
-  background-color: #FBF2DB;
+  background-color: #fff;
   overflow: hidden;
   position: fixed;
   top: 50%;
@@ -509,8 +511,8 @@ span {
   grid-gap: 0.2rem;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  max-width: 80vw;
+  max-height: 90vh;
 }
 .modal img {
   width: 20rem;
@@ -523,15 +525,21 @@ span {
 }
 .modal .half {
   justify-self: center;
-  max-width: 90%;
+  max-width: 80%;
+  margin: 0;
+  padding: 1rem;
 }
 .modal .btn-box {
   display: flex;
   flex-direction: column;
   justify-self: center;
   align-self: flex-end;
-  margin-top: 2rem;
-  width: 90;
+  margin-top: 0.5rem;
+}
+.modal .btn-box button {
+  max-width: 100%;
+  align-self: center;
+  margin: 0.2rem auto;
 }
 
 .modal-overlay {
@@ -540,16 +548,15 @@ span {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 55;
-  background-color: #FBF1D9;
+  z-index: 600;
+  background-color: rgba(251, 242, 219, 0.5);
 }
 
 .pills {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
   grid-gap: 0.2rem;
-  max-width: 90%;
-  justify-content: center;
+  max-width: 80%;
 }
 .pills span {
   margin: 0.2rem;
@@ -557,47 +564,46 @@ span {
 }
 .pills li {
   position: relative;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   border: 1px solid #B77423;
   color: #B77423;
   text-align: center;
   background-color: white;
-  padding: 0.1rem;
   font-size: 0.8rem;
 }
 
 .technologies {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  align-items: baseline;
-  justify-items: center;
-  height: auto;
-  max-height: 92vh;
+  justify-self: center;
+  min-height: 90vh;
 }
 .technologies .section-text {
   max-width: 90%;
   padding: 0 1rem;
-  justify-self: center;
 }
 .technologies ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem 0.3rem;
-  padding: 1rem;
+  grid-gap: 1.3rem 0.6rem;
+}
+.technologies .techItem {
+  padding: 0;
 }
 .technologies .techItem label {
   display: inline-flex;
   flex-direction: column;
-  height: 4.25rem;
-  width: 4.75rem;
+  height: 3.5rem;
+  width: 3.5rem;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 .technologies .techItem .label {
   font-size: 0.8rem;
 }
 .technologies .techItem img {
-  height: 2.75rem;
+  height: 2.4rem;
   margin-bottom: 0.5rem;
 }
 

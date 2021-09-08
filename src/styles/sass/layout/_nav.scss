@@ -5,13 +5,13 @@
 	max-height: 8vh;
 	overflow: hidden;
 	color: $white;
-	z-index: 99;
+	z-index: 199;
 	padding: 0rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 1rem;
-	background-color: rgba(252, 249, 247, 0.473);
+	background-color: rgba(252, 249, 247, 0.329);
 
 	img {
 		height: 2rem;
@@ -21,7 +21,7 @@
 		list-style: none;
 		display: flex;
 		justify-content: center;
-		background-color: rgba(112, 75, 32, 0.829);
+		background-color: rgba(112, 75, 32, 0.918);
 		border-radius: 44px;
 		align-items: center;
 		text-align: center;

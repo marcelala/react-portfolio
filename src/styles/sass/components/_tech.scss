@@ -1,35 +1,33 @@
 .technologies {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    align-items: baseline;
-	justify-items: center;
-	height: auto;
-	max-height: 92vh;
+	justify-self: center;
+	min-height: 90vh;
 		.section-text{
 		max-width: 90%;
 		padding: 0 1rem;
-		justify-self: center;
 	}
 	ul {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 1.5rem 0.3rem;
-		padding: 1rem;
+		grid-gap: 1.3rem .6rem;
 	}
 	.techItem {
+		padding: 0;
 		label {
 			display: inline-flex;
 			flex-direction: column;
-			height: 4.25rem;
-			width: 4.75rem;
+			height: 3.5rem;
+			width: 3.5rem;
 			justify-content: center;
 			align-items: center;
+			padding: 0;
 		}
 		.label {
 			font-size: 0.8rem;
 		}
 		img {
-			height: 2.75rem;
+			height: 2.4rem;
 			margin-bottom: 0.5rem;
 		}
 	}

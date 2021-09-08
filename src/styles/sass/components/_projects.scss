@@ -1,10 +1,9 @@
 .projects {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	align-items: center;
-	justify-content: center;
-	height: auto;
 	justify-self: center;
+	align-items: stretch;
+	min-height: 90vh;
 	.section-text {
 		max-width: 90%;
 		padding: 0 1rem;
@@ -14,8 +13,9 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
 		grid-gap: 1rem;
-		padding: .5rem 0.5rem;
+		padding: 0.5rem 0.5rem;
 		justify-items: center;
+		position: relative;
 	}
 	li {
 		position: relative;
@@ -80,7 +80,7 @@
 }
 
 .modal-container {
-	background-color: $beige-light;
+	background-color: $white;
 	overflow: hidden;
 	position: fixed;
 	top: 50%;
@@ -111,11 +111,13 @@
 	grid-gap: 0.2rem;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
-	width: 100vw;
+	max-width: 80vw;
+	max-height: 90vh;
+
 	img {
 		width: 20rem;
 		height: 11.5rem;
+
 		object-fit: cover;
 		position: relative;
 		overflow: hidden;
@@ -123,15 +125,22 @@
 	}
 	.half {
 		justify-self: center;
-		max-width: 90%;
+		max-width: 80%;
+		margin: 0;
+		padding: 1rem;
 	}
 	.btn-box {
 		display: flex;
 		flex-direction: column;
 		justify-self: center;
 		align-self: flex-end;
-		margin-top: 2rem;
-		width: 90;
+		margin-top: 0.5rem;
+
+		button {
+			max-width: 100%;
+			align-self: center;
+			margin: 0.2rem auto;
+		}
 	}
 }
 
@@ -141,28 +150,26 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 55;
-	background-color: $off-white;
+	z-index: 600;
+	background-color: rgba($beige-light, 0.5);
 }
 
 .pills {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
 	grid-gap: 0.2rem;
-	max-width: 90%;
-	justify-content: center;
+	max-width: 80%;
 	span {
 		margin: 0.2rem;
 		padding: 0.2rem auto;
 	}
 	li {
 		position: relative;
-		border-radius: 1rem;
+		border-radius: 0.5rem;
 		border: 1px solid $brown-light;
 		color: $brown-light;
 		text-align: center;
 		background-color: white;
-		padding: 0.1rem;
 		font-size: 0.8rem;
 	}
 }
