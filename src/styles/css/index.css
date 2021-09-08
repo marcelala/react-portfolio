@@ -407,7 +407,6 @@ span {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-self: center;
-  align-items: stretch;
   min-height: 90vh;
 }
 .projects .section-text {
@@ -422,9 +421,8 @@ span {
   padding: 0.5rem 0.5rem;
   justify-items: center;
   position: relative;
-}
-.projects li {
-  position: relative;
+  justify-self: center;
+  width: 100%;
 }
 .projects li button {
   background-color: transparent;

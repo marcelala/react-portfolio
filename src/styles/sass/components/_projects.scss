@@ -2,7 +2,6 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	justify-self: center;
-	align-items: stretch;
 	min-height: 90vh;
 	.section-text {
 		max-width: 90%;
@@ -16,9 +15,11 @@
 		padding: 0.5rem 0.5rem;
 		justify-items: center;
 		position: relative;
+		justify-self: center;
+		width: 100%;
+
 	}
 	li {
-		position: relative;
 
 		button {
 			background-color: transparent;
@@ -27,7 +28,6 @@
 			&:disabled img {
 				filter: brightness(0.7);
 			}
-
 			margin: 0;
 			padding: 0;
 			div {
