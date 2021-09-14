@@ -17,7 +17,7 @@ export default function ProjectModal({ project, setModal }) {
 	};
 	return (
 		<article className="modal">
-			<button className="btn-close" onClick={()=> setModal(null)} >
+			<button className="btn-close" onClick={() => setModal(null)}>
 				<img src={closeIcon} alt="x" />
 			</button>
 			<img src={pictureURL} alt="thumbnail of project" className="modal-img" />

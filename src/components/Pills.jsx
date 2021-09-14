@@ -3,9 +3,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export default function Pills({ data }) {
-	const pillList = data.map((tech) => {
+	const pillList = data.map((tech,index) => {
 		return (
-			<span>
+			<span key= {index}>
 				<li className="pill-container">{tech}</li>
 			</span>
 		);

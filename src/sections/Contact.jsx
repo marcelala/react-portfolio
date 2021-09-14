@@ -14,11 +14,11 @@ export default function Contact() {
 			"Here is my contact information in case you would like to start a collaboration.",
 	};
 
-	const socialList = socialData.map((item) => {
+	const socialList = socialData.map((item,index) => {
 		const imageObject = require(`../assets/img/icons/${item.icon}`);
 		const imageURL = imageObject.default;
 		return (
-			<li>
+			<li key={index}>
 				<a href={item.name}>
 					<label htmlFor="icon-name" className="icon-name">
 						<img src={imageURL} alt={"icon of " + item.label} />

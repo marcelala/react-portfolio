@@ -182,21 +182,20 @@ span {
 .nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
   background-color: rgba(112, 75, 32, 0.918);
   border-radius: 44px;
   align-items: center;
   text-align: center;
   padding: 0 1.5rem;
   margin-top: 0.5rem;
+  justify-content: center;
+  width: 100%;
 }
 @media screen and (min-device-width: 768px) {
   .nav ul {
     width: 100%;
     border-radius: 0;
-    padding: 0;
     margin: 0;
-    height: 8rem;
   }
 }
 .nav ul a {
@@ -240,7 +239,8 @@ span {
   color: #FBF1D9;
   margin-top: 0.2rem;
   display: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  width: 100%;
 }
 @media screen and (min-device-width: 768px) {
   .nav ul h3 {
@@ -515,8 +515,8 @@ span {
   max-height: 90vh;
 }
 .modal .modal-img {
-  width: 12rem;
-  height: auto;
+  width: 20rem;
+  height: 11.5rem;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
