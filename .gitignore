@@ -24,3 +24,8 @@ yarn-error.log*
 firebase.json
 .firebaserc
 .firebase/hosting.YnVpbGQ.cache
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/react-portfolio.iml
+/.idea/vcs.xml

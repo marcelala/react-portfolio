@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 //project files
-import Modal from "./Modal";
+import Modal from "./reusables/Modal";
 import ProjectModal from "./ProjectModal";
 export default function ProjectCard({ project }) {
 	const { thumbnail, isReleased, title } = project;

@@ -2,7 +2,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 //project files
-import closeIcon from "../assets/img/icons/close.svg";
+import closeIcon from "../../assets/img/icons/close.svg";
 
 export default function Modal({ children, handleClose, active }) {
 	if (!active) return null;
