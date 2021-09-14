@@ -1,11 +1,7 @@
 import React from "react";
 import Logo from "../assets/img/logos/MF-white.png";
 
-export default function Nav() {
-	/*<div className="nav-brand">
-		<img src={Brand} className="nav-brand-logo" alt="M F logo" />
-	</div>
-<div className="owner">Marcela Felix Fortis</div>*/
+export default function Navigation() {
 	return (
 		<nav className="nav">
 			<ul className="nav-list">
