@@ -9,12 +9,13 @@ import Tech from "./sections/Tech";
 import Contact from "./sections/Contact";
 
 function App() {
+
 	return (
 		<div className="App">
 			<Navigation />
 			<Hero />
 			<About />
-			<Projects />
+			<Projects/>
 			<Tech />
 			<Contact />
 		</div>

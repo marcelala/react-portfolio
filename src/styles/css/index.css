@@ -334,6 +334,21 @@ span {
   color: #7B430A;
 }
 
+.btn-close {
+  position: fixed;
+  z-index: 10000;
+  border: none;
+  background-color: transparent;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  right: 5%;
+}
+.btn-close:hover {
+  outline: none;
+  transform: translateY(-4px);
+}
+
 .hero {
   overflow: hidden;
   width: 100%;
@@ -489,19 +504,6 @@ span {
   padding: 0rem;
   padding-bottom: 1rem;
 }
-.modal-container .btn-close {
-  position: fixed;
-  z-index: 10000;
-  border: none;
-  background-color: transparent;
-  margin: 0.5rem;
-  cursor: pointer;
-  right: 5%;
-}
-.modal-container .btn-close:hover {
-  outline: none;
-  transform: translateY(-4px);
-}
 
 .modal {
   display: grid;
@@ -512,9 +514,9 @@ span {
   max-width: 80vw;
   max-height: 90vh;
 }
-.modal img {
-  width: 20rem;
-  height: 11.5rem;
+.modal .modal-img {
+  width: 12rem;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
