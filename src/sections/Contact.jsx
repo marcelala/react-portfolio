@@ -14,7 +14,7 @@ export default function Contact() {
 			"Here is my contact information in case you would like to start a collaboration.",
 	};
 
-	const socialList = socialData.map((item,index) => {
+	const socialList = socialData.map((item, index) => {
 		const imageObject = require(`../assets/img/icons/${item.icon}`);
 		const imageURL = imageObject.default;
 		return (

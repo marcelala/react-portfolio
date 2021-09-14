@@ -1,11 +1,12 @@
 {
-    "liveServer.settings.port": 5501,
-    "liveSassCompile.settings.formats": [
-
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "/src/styles/css"
-        }
-    ]
+	"liveServer.settings.port": 5501,
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "/src/styles/css"
+		}
+	],
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true
 }

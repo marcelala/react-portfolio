@@ -1,7 +1,6 @@
 // npm packages
 import React from "react";
 import PropTypes from "prop-types";
-//project files
 export default function ProjectCard({ project, onClick }) {
 	const { thumbnail, isReleased, title } = project;
 	const thumbnailObject = require(`../assets/img/project-images/thumbnails/${thumbnail}`);
@@ -26,7 +25,6 @@ export default function ProjectCard({ project, onClick }) {
 		</li>
 	);
 }
-
 ProjectCard.propTypes = {
 	thumbnail: PropTypes.string,
 	title: PropTypes.string,

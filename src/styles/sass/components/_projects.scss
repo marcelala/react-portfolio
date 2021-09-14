@@ -17,10 +17,8 @@
 		position: relative;
 		justify-self: center;
 		width: 100%;
-
 	}
 	li {
-
 		button {
 			background-color: transparent;
 			outline: transparent;
@@ -91,8 +89,7 @@
 	padding-bottom: 1rem;
 }
 
-
-.modal {
+.project-modal {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	grid-gap: 0.2rem;

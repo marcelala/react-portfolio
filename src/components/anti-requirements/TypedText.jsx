@@ -1,16 +1,11 @@
-import React, { Component } from "react";
-import { render } from "react-dom";
+import React from "react";
 import Typed from "react-typed";
 
-class TypedText extends Component {
-	render() {
+export default function TypedText(){
 		return (
 			<div className="wrap">
 				<div className="type-wrap">
 					<Typed
-						typedRef={(typed) => {
-							this.typed = typed;
-						}}
 						strings={[
 							"Fullstack Developer",
 							"Web Developer",
@@ -24,5 +19,3 @@ class TypedText extends Component {
 			</div>
 		);
 	}
-}
-export default TypedText;
