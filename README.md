@@ -7,10 +7,9 @@
 
 ## Overview
 
-This is my portfolio, welcome! Click [here](https://react-list-eika.web.app/) to visit and get to know me and my work as a software developer.\
+This is my portfolio, welcome! Click [here](https://marcelaf-portfolio.web.app/) to visit and get to know me and my work as a software developer.\
 <br/>
 
----
 
 <br/>
 
@@ -26,7 +25,6 @@ This is my portfolio, welcome! Click [here](https://react-list-eika.web.app/) to
 - [Attributions](#attributions-&-helpful-links)
   <br/>
 
----
 
 
 ## Specification
@@ -36,7 +34,6 @@ This is my portfolio, welcome! Click [here](https://react-list-eika.web.app/) to
 The goal of this project was to build a simple single page application to enable potential future collaborations with interested parties.
 <br/>
 
----
 
 
 
@@ -64,7 +61,6 @@ The goal of this project was to build a simple single page application to enable
 
 The UI component tree allows to visualize the different parts of the application.
 <br/>
-
 [View on Whimsical](https://whimsical.com/portfolio-page-M45VgG539Pf4mc2nzd4Fza)
 
 <br/>
@@ -77,7 +73,6 @@ The UI component tree allows to visualize the different parts of the application
 
 <br/>
 
----
 
 <br/>
 
@@ -143,7 +138,7 @@ npm run build
 
 <br/>
 
----
+
 
 <br/>
 
