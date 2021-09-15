@@ -1,15 +1,8 @@
 const projectData = [
 	{
 		title: "Purezza Pizzeria",
-		text: "Vegan Restaurant Website.This project is about A, B, C where users can do D, E, F, so they can obtain G, H, I benefit. It uses:",
-		techUsed: [
-			"Javascript",
-			"React",
-			"SaSS",
-			"Figma",
-			"Firebase",
-			"React-portal",
-		],
+		text: "Welcome to Purezza Pizzeria! The goal of this project was to build a multiple page application for a Vegan Restaurant. It uses:",
+		techUsed: ["Javascript", "React", "SaSS", "Figma", "Firebase"],
 		thumbnail: "0-VeganRestaurant.png",
 		picture: "0-VeganRestaurant.png",
 		url: "https://purezza.web.app/",

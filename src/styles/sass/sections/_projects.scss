@@ -7,11 +7,9 @@
 	justify-items: center;
 	position: relative;
 	align-content: center;
-	.section-text{
+	.section-text {
 		align-content: center;
-		margin-bottom: 2rem;
 	}
-
 
 	ul {
 		display: grid;
@@ -81,6 +79,16 @@
 	}
 }
 
+/* modal styles */
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 600;
+	background-color: rgba($black, 0.3);
+}
 .modal-container {
 	background-color: $white;
 	overflow: hidden;
@@ -89,22 +97,24 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 1000;
-	padding: 0rem;
-	padding-bottom: 1rem;
+	max-width: 80vw;
+	max-height: 90vh;
 }
-
 .project-modal {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	grid-gap: 0.2rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	column-gap: 1rem;
 	justify-content: center;
 	align-items: center;
 	max-width: 80vw;
 	max-height: 90vh;
 
 	.modal-img {
-		width: 20rem;
-		height: 11.5rem;
+		padding: 0.8rem;
+		padding-bottom: 0;
+		width: 100%;
+		max-width: 80vw;
+		height: auto;
 		object-fit: cover;
 		position: relative;
 		overflow: hidden;
@@ -112,40 +122,39 @@
 	}
 	.half {
 		justify-self: center;
-		max-width: 80%;
+		width:100%;
+		max-width: 80vw;
+		max-height: 90vh;
 		margin: 0;
-		padding: 1rem;
+		padding: 0.8rem;
+		.section-text {
+			margin: 0;
+			padding: 0;
+			h2 {
+				padding: 0;
+				font-size: 1.2rem;
+			}
+			p {
+				font-size: 0.8rem;
+				padding: 1rem 0;
+			}
+		}
 	}
 	.btn-box {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		justify-self: center;
-		align-self: flex-end;
-		margin-top: 0.5rem;
-
-		button {
-			max-width: 100%;
-			align-self: center;
-			margin: 0.2rem auto;
-		}
+		align-content: stretch;
+		width:100%;
+		max-width: 80vw;
 	}
 }
-
-.modal-overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 600;
-	background-color: rgba($beige-light, 0.5);
-}
-
 .pills {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
 	grid-gap: 0.2rem;
-	max-width: 80%;
+	margin: 0;
 	span {
 		margin: 0.2rem;
 		padding: 0.2rem auto;

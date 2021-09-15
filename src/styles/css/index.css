@@ -316,13 +316,15 @@ p {
 
 .btn-primary,
 .btn-secondary {
-  width: 19.4rem;
-  height: 2.75rem;
+  width: 20rem;
+  height: 2.5rem;
   border: 2px solid #7B430A;
   font-size: 1rem;
   font-weight: 700;
   margin: 0.2rem;
   cursor: pointer;
+  width: 100%;
+  max-width: 80vw;
 }
 .btn-primary:hover,
 .btn-secondary:hover {
@@ -438,7 +440,6 @@ p {
 }
 .projects .section-text {
   align-content: center;
-  margin-bottom: 2rem;
 }
 .projects ul {
   display: grid;
@@ -503,6 +504,17 @@ p {
   font-size: 1.5rem;
 }
 
+/* modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 600;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .modal-container {
   background-color: #fff;
   overflow: hidden;
@@ -511,22 +523,26 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  padding: 0rem;
-  padding-bottom: 1rem;
+  max-width: 80vw;
+  max-height: 90vh;
 }
 
 .project-modal {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 0.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   justify-content: center;
   align-items: center;
   max-width: 80vw;
   max-height: 90vh;
 }
 .project-modal .modal-img {
-  width: 20rem;
-  height: 11.5rem;
+  padding: 0.8rem;
+  padding-bottom: 0;
+  width: 100%;
+  max-width: 80vw;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
@@ -535,38 +551,39 @@ p {
 }
 .project-modal .half {
   justify-self: center;
-  max-width: 80%;
+  width: 100%;
+  max-width: 80vw;
+  max-height: 90vh;
   margin: 0;
-  padding: 1rem;
+  padding: 0.8rem;
+}
+.project-modal .half .section-text {
+  margin: 0;
+  padding: 0;
+}
+.project-modal .half .section-text h2 {
+  padding: 0;
+  font-size: 1.2rem;
+}
+.project-modal .half .section-text p {
+  font-size: 0.8rem;
+  padding: 1rem 0;
 }
 .project-modal .btn-box {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-self: center;
-  align-self: flex-end;
-  margin-top: 0.5rem;
-}
-.project-modal .btn-box button {
-  max-width: 100%;
-  align-self: center;
-  margin: 0.2rem auto;
-}
-
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 600;
-  background-color: rgba(251, 242, 219, 0.5);
+  align-content: stretch;
+  width: 100%;
+  max-width: 80vw;
 }
 
 .pills {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
   grid-gap: 0.2rem;
-  max-width: 80%;
+  margin: 0;
 }
 .pills span {
   margin: 0.2rem;
