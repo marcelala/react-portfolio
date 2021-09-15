@@ -1,8 +1,5 @@
 .technologies {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	justify-self: center;
-	align-content: center;
+	@include section-grid;
 	ul {
 		width: 100%;
 		display: grid;

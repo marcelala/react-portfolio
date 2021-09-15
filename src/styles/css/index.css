@@ -526,11 +526,11 @@ p {
 .about {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  align-items: center;
+  justify-self: center;
+  align-content: center;
   max-width: 100%;
   position: relative;
   margin: 0 auto;
-  justify-content: center;
 }
 .about img {
   max-width: 9rem;
@@ -552,55 +552,48 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   justify-self: center;
-  min-height: 90vh;
-  justify-content: center;
-  justify-items: center;
-  position: relative;
   align-content: center;
 }
-.projects .section-text {
-  align-content: center;
-}
-.projects ul {
+.projects .projects-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-gap: 1rem;
   justify-items: center;
   position: relative;
   justify-self: center;
   width: 100%;
 }
-.projects li button {
+.projects .project-card button {
   background-color: transparent;
   outline: transparent;
   border-color: transparent;
   margin: 0;
   padding: 0;
 }
-.projects li button:disabled img {
+.projects .project-card button:disabled img {
   filter: brightness(0.7);
 }
-.projects li button div {
+.projects .project-card button div {
   position: relative;
 }
-.projects li img {
+.projects .project-card img {
   height: 7.2rem;
   width: 9.3rem;
   padding: 0;
   border-radius: 1rem;
   cursor: pointer;
 }
-.projects li img:hover {
+.projects .project-card img:hover {
   outline: none;
   transform: translateY(-2px);
   box-shadow: 0 0.5rem 1rem rgba(123, 67, 10, 0.5);
 }
-.projects li h3 {
+.projects .project-card h3 {
   color: #7B430A;
   font-weight: 500;
   cursor: pointer;
 }
-.projects li .overlay {
+.projects .project-card .overlay {
   background-color: #FBF1D9;
   opacity: 0.4;
   display: flex;
@@ -615,7 +608,7 @@ p {
   padding: 0;
   border-radius: 1rem;
 }
-.projects li .overlay h3 {
+.projects .project-card .overlay h3 {
   position: absolute;
   text-transform: uppercase;
   z-index: 900;
@@ -826,16 +819,14 @@ p {
 
 .contact {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-self: center;
+  align-content: center;
   width: 100%;
   height: auto;
-  position: relative;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  align-items: center;
-  justify-items: start;
 }
 .contact ul {
   display: grid;
-  padding: 0 1rem;
 }
 .contact img {
   margin: 0.5rem;

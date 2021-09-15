@@ -1,14 +1,9 @@
 .contact {
-	display: grid;
+	@include section-grid;
 	width: 100%;
 	height: auto;
-	position: relative;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	align-items: center;
-	justify-items: start;
 	ul {
 		display: grid;
-		padding: 0 1rem;
 	}
 	img {
 		margin: 0.5rem;

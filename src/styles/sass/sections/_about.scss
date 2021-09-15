@@ -1,11 +1,8 @@
 .about {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	align-items: center;
+	@include section-grid;
 	max-width: 100%;
 	position: relative;
 	margin: 0 auto;
-	justify-content: center;
 	img{
 		max-width: 9rem;
 		position: relative;

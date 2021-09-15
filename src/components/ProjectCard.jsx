@@ -6,9 +6,9 @@ export default function ProjectCard({ project, onClick }) {
 	const thumbnailObject = require(`../assets/img/project-images/thumbnails/${thumbnail}`);
 	const thumbnailURL = thumbnailObject.default;
 	return (
-		<li>
+		<li className="project-card">
 			<button disabled={isReleased === false} onClick={onClick}>
-				<label htmlFor="project-title" className="project">
+				<label htmlFor="project-title" className="project-card-label">
 					{!isReleased && (
 						<div className="overlay">
 							<h3>Coming soon</h3>
