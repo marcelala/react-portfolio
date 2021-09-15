@@ -1,15 +1,15 @@
 .contact {
 	height: auto;
 	position: relative;
-	margin: 0;
-	padding: 0;
+	.section-text{
+		margin-bottom: 0;
+	}
 }
 .contact-section {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	align-items: center;
 	justify-items: center;
-	padding: 1rem 2rem;
 	.contact-list {
 		display: grid;
 		grid-gap: 1rem;
@@ -32,12 +32,14 @@
 
 footer {
 	position: relative;
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	height: 5.3rem;
+	height:auto;
+	min-height: 5.3rem;
+	padding: 0;
 	margin: 0;
 
 	p {

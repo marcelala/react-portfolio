@@ -3,16 +3,20 @@
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	justify-self: center;
 	min-height: 90vh;
-	.section-text {
-		max-width: 90%;
-		padding: 0 1rem;
-		justify-self: center;
+	justify-content: center;
+	justify-items: center;
+	position: relative;
+	align-content: center;
+	.section-text{
+		align-content: center;
+		margin-bottom: 2rem;
 	}
+
+
 	ul {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
 		grid-gap: 1rem;
-		padding: 0.5rem 0.5rem;
 		justify-items: center;
 		position: relative;
 		justify-self: center;

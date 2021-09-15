@@ -1,19 +1,21 @@
+
 .technologies {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	justify-self: center;
 	min-height: 90vh;
-		.section-text{
-		max-width: 90%;
-		padding: 0 1rem;
-	}
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+	position: relative;
+
 	ul {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 1.3rem .6rem;
+		grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+		justify-content: center;
 	}
 	.techItem {
-		padding: 0;
+		padding: 1rem;
 		label {
 			display: inline-flex;
 			flex-direction: column;

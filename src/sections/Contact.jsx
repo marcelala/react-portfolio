@@ -30,13 +30,15 @@ export default function Contact() {
 	});
 
 	return (
-		<section className="contact" id="contact">
-			<div className="contact-section">
-				<TitleAndDescription text={sectionHeader} />
-				<div className="contact-list">
-					<List array={contactData} itemType={"contactItem"} />
+		<div className="contact-info">
+			<section className="contact" id="contact">
+				<div className="contact-section">
+					<TitleAndDescription text={sectionHeader} />
+					<div className="contact-list">
+						<List array={contactData} itemType={"contactItem"} />
+					</div>
 				</div>
-			</div>
+			</section>
 			<footer>
 				<div className="social-list">
 					<ul>{socialList}</ul>
@@ -45,6 +47,6 @@ export default function Contact() {
 					© Marcela Felix Fortis {"   "} {currentYear}
 				</p>
 			</footer>
-		</section>
+		</div>
 	);
 }
