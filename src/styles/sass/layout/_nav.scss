@@ -1,20 +1,21 @@
 .nav {
-	position: fixed;
 	width: 100%;
-	height: auto;
-	min-height: 1.5rem;
-	max-height: 8vh;
 	overflow: hidden;
 	color: $white;
+	position: fixed;
 	z-index: 199;
-	padding: 0rem;
+	height: auto;
+	min-height: 2rem;
 	display: flex;
+	padding: 1rem;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 1rem;
 	background-color: rgba(252, 249, 247, 0.329);
-	justify-content: center;
 	margin: 0 auto;
+	@media screen and (min-device-width: 768px) {
+		padding:0;
+	}
 
 	img {
 		height: 2rem;
@@ -22,31 +23,37 @@
 	}
 	ul {
 		list-style: none;
-		display: flex;
 		background-color: rgba(112, 75, 32, 0.918);
 		border-radius: 44px;
+		display: grid;
+		grid-template-columns: 0rem repeat(5,min-content);
 		align-items: center;
 		text-align: center;
-		padding: 0 1.5rem;
-		margin-top: 0.5rem;
-		justify-content: center;
+		margin:0;
+		justify-content: space-evenly;
 		width: 100%;
+		max-width: 100%;
+		height: auto;
+		padding: .2rem .6rem;
 		@media screen and (min-device-width: 768px) {
-			width: 100%;
+			grid-template-columns: repeat(6,min-content);
+			width: 100vw;
 			border-radius: 0;
 			margin: 0;
+			padding: 0;
+			align-content: stretch;
+
 		}
 		a {
-			font-size: 0.6rem;
+			font-size: 0.7rem;
 			font-weight: 500;
 			text-decoration: none;
 			text-transform: uppercase;
 			cursor: pointer;
-			padding: 0.3rem;
 			@media screen and (min-device-width: 768px) {
 				justify-content: flex-end;
 				font-size: 0.8rem;
-				padding: 0.7rem;
+				padding: 0.8rem 1rem;
 				font-weight: 400;
 			}
 		}
@@ -57,16 +64,20 @@
 		}
 
 		.desktop-logo {
-			display: none;
+			a{
+				display: none;
+				justify-content: center;
+				padding:0 4rem;
+
+				@media screen and (min-device-width: 768px) {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+				}
+			}
 			img {
 				height: 2.8rem;
 				padding: 0;
-			}
-			@media screen and (min-device-width: 768px) {
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				margin-right: 10rem;
 			}
 		}
 		h3 {
@@ -74,10 +85,12 @@
 			color: $off-white;
 			margin-top: 0.2rem;
 			display: none;
-			font-size: 1.1rem;
+			font-size: 1.2rem;
 			width: 100%;
+			padding: 0rem 1rem;
 			@media screen and (min-device-width: 768px) {
 				display: flex;
+				text-transform: none;
 			}
 		}
 	}

@@ -5,15 +5,15 @@ export default function Navigation() {
 	return (
 		<nav className="nav">
 			<ul className="nav-list">
-				<div className="desktop-logo">
+				<li className="desktop-logo">
 					<a href="#hero">
 						<img src={Logo} alt="Letters MF" />
-					</a>
 					<div className="owner">
 						{" "}
 						<h3>Marcela Felix Fortis</h3>
 					</div>
-				</div>
+					</a>
+				</li>
 				<li>
 					<a href="#about">About</a>
 				</li>
@@ -25,7 +25,6 @@ export default function Navigation() {
 						<img src={Logo} alt="Letters MF" />
 					</a>
 				</li>
-				<div />
 				<li>
 					<a href="#tech">Tech</a>
 				</li>
