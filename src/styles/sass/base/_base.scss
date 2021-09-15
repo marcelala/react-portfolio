@@ -18,6 +18,9 @@ section {
 	justify-content: center;
 	padding: 2rem;
 	margin: 0 auto;
+	@media screen and (min-device-width: 760px) {
+				padding: 3rem;
+}
 	@media screen and (min-device-width: 1500px) {
 				padding: 4rem;
 }

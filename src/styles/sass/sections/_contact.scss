@@ -1,7 +1,8 @@
 .contact {
 	@include section-grid;
-	width: 100%;
-	height: auto;
+	.section-text{
+		margin: 0;
+	}
 	ul {
 		display: grid;
 	}
@@ -18,20 +19,20 @@
 			margin: 1rem 2rem;
 		}
 	}
-}
-label {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-}
-span {
-	font-size: 1rem;
-	margin: 0.5 0;
-	@media screen and (min-device-width: 1500px) {
-		font-size: 2rem;
+	label {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
 	}
-	@media screen and (min-device-width: 2000px) {
-		font-size: 3rem;
+	span {
+		font-size: 1rem;
+		margin: 0.5 0;
+		@media screen and (min-device-width: 1500px) {
+			font-size: 2rem;
+		}
+		@media screen and (min-device-width: 2000px) {
+			font-size: 3rem;
+		}
 	}
 }
 
@@ -46,32 +47,33 @@ footer {
 	min-height: 5.3rem;
 	padding: 0;
 	margin: 0;
-}
-.social-list {
-	ul {
-		display: flex;
-	}
-}
-li {
-	margin: 0.5rem;
-	cursor: pointer;
 
-	img {
+	.social-list {
+		ul {
+			display: flex;
+		}
+	}
+	li {
 		margin: 0.5rem;
-		&:hover {
-			outline: none;
-			transform: translateY(-2px);
-			box-shadow: 0 0.5rem 1rem rgba($brown, 0.5);
-		}
-		@media screen and (min-device-width: 1024px) {
-			width: 2rem;
-			height: auto;
-			margin: 1rem;
-		}
-		@media screen and (min-device-width: 2000px) {
-			width: 4rem;
-			height: auto;
-			margin: 2rem;
+		cursor: pointer;
+
+		img {
+			margin: 0.5rem;
+			&:hover {
+				outline: none;
+				transform: translateY(-2px);
+				box-shadow: 0 0.5rem 1rem rgba($brown, 0.5);
+			}
+			@media screen and (min-device-width: 1024px) {
+				width: 2rem;
+				height: auto;
+				margin: 1rem;
+			}
+			@media screen and (min-device-width: 2000px) {
+				width: 4rem;
+				height: auto;
+				margin: 2rem;
+			}
 		}
 	}
 }

@@ -33,6 +33,11 @@ section {
   padding: 2rem;
   margin: 0 auto;
 }
+@media screen and (min-device-width: 760px) {
+  section {
+    padding: 3rem;
+  }
+}
 @media screen and (min-device-width: 1500px) {
   section {
     padding: 4rem;
@@ -88,15 +93,15 @@ h1,
 @media screen and (min-device-width: 1500px) {
   h1,
 .h1 {
-    font-size: 5rem;
-    line-height: 5.56rem;
+    font-size: 4rem;
+    line-height: 4.56rem;
   }
 }
 @media screen and (min-device-width: 2000px) {
   h1,
 .h1 {
-    font-size: 6rem;
-    line-height: 6.5rem;
+    font-size: 5rem;
+    line-height: 6rem;
   }
 }
 
@@ -109,15 +114,15 @@ h2,
 @media screen and (min-device-width: 1500px) {
   h2,
 .h2 {
-    font-size: 3rem;
-    line-height: 3.26rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
   }
 }
 @media screen and (min-device-width: 2000px) {
   h2,
 .h2 {
-    font-size: 4.5rem;
-    line-height: 5.5rem;
+    font-size: 3.5rem;
+    line-height: 4.3rem;
   }
 }
 
@@ -129,15 +134,15 @@ h3,
 @media screen and (min-device-width: 1500px) {
   h3,
 .h3 {
-    font-size: 2.5rem;
-    line-height: 2.375rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 @media screen and (min-device-width: 2000px) {
   h3,
 .h3 {
-    font-size: 3.5rem;
-    line-height: 4.5rem;
+    font-size: 3rem;
+    line-height: 4rem;
   }
 }
 
@@ -147,14 +152,14 @@ p {
 }
 @media screen and (min-device-width: 1500px) {
   p {
-    font-size: 2rem;
-    line-height: 2.375rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
   }
 }
 @media screen and (min-device-width: 2000px) {
   p {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 }
 
@@ -165,6 +170,7 @@ p {
   margin-bottom: 2rem;
 }
 .section-text h2 {
+  text-align: center;
   font-weight: 500;
   padding: 0.5rem;
 }
@@ -219,7 +225,7 @@ p {
 .technologies {
   grid-area: technologies;
   background-color: #fff;
-  min-height: 70vh;
+  min-height: 60vh;
 }
 
 .contact-info {
@@ -276,41 +282,35 @@ p {
   height: auto;
   min-height: 7vh;
   padding: 0rem;
+  -moz-column-gap: 0.3rem;
+       column-gap: 0.3rem;
 }
 @media screen and (min-device-width: 768px) {
   .nav ul {
     grid-template-columns: 1fr repeat(4, 10%);
     -moz-column-gap: 0.3rem;
          column-gap: 0.3rem;
-    width: 100vw;
+    width: 100%;
     height: auto;
     border-radius: 0;
     margin: 0;
     padding: 0 1rem;
   }
 }
-.nav ul a {
-  font-size: 0.7rem;
+.nav ul p {
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 }
+@media screen and (max-device-width: 768px) {
+  .nav ul p {
+    font-size: 0.7rem;
+  }
+}
 @media screen and (min-device-width: 768px) {
-  .nav ul a {
+  .nav ul p {
     justify-content: flex-end;
-    font-size: 0.9rem;
-    font-weight: 400;
-  }
-}
-@media screen and (min-device-width: 1024px) {
-  .nav ul a {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (min-device-width: 1500px) {
-  .nav ul a {
-    font-size: 2rem;
   }
 }
 @media screen and (min-device-width: 768px) {
@@ -320,11 +320,11 @@ p {
 }
 .nav ul .desktop-logo a {
   display: none;
+  height: 100%;
 }
 @media screen and (min-device-width: 768px) {
   .nav ul .desktop-logo a {
     justify-content: start;
-    padding: 0.3rem 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -346,15 +346,13 @@ p {
     height: auto;
   }
 }
-.nav ul h3 {
+.nav ul .owner {
   display: none;
-  width: 100%;
   height: 100%;
 }
 @media screen and (min-device-width: 768px) {
-  .nav ul h3 {
+  .nav ul .owner {
     display: flex;
-    font-size: 1.2rem;
     text-transform: none;
     padding: 0rem 1rem;
     padding-top: 0.3rem;
@@ -362,14 +360,8 @@ p {
     color: #FBF1D9;
   }
 }
-@media screen and (min-device-width: 1024px) {
-  .nav ul h3 {
-    font-size: 1.5rem;
-  }
-}
 @media screen and (min-device-width: 1500px) {
-  .nav ul h3 {
-    font-size: 3rem;
+  .nav ul .owner {
     padding: 0 2rem;
     padding-top: 1rem;
   }
@@ -526,8 +518,9 @@ p {
 .about {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  justify-self: center;
+  justify-content: start;
   align-content: center;
+  width: 100%;
   max-width: 100%;
   position: relative;
   margin: 0 auto;
@@ -551,17 +544,61 @@ p {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  justify-self: center;
+  justify-content: start;
   align-content: center;
+  width: 100%;
 }
 .projects .projects-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  grid-gap: 1rem;
-  justify-items: center;
-  position: relative;
-  justify-self: center;
   width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  row-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  justify-items: center;
+}
+@media screen and (min-device-width: 750px) {
+  .projects .projects-list {
+    grid-template-columns: repeat(auto-fit, minmax(198px, 1fr));
+    row-gap: 2rem;
+    -moz-column-gap: 1.75rem;
+         column-gap: 1.75rem;
+  }
+}
+@media screen and (min-device-width: 1024px) {
+  .projects .projects-list {
+    grid-template-columns: repeat(auto-fit, minmax(234px, 1fr));
+    row-gap: 2.5rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+@media screen and (min-device-width: 1400px) {
+  .projects .projects-list {
+    grid-template-columns: repeat(auto-fit, minmax(234px, 1fr));
+    row-gap: 2.5rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+@media screen and (min-device-width: 2000px) {
+  .projects .projects-list {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    row-gap: 2.5rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+.projects .project-card {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
 }
 .projects .project-card button {
   background-color: transparent;
@@ -573,15 +610,19 @@ p {
 .projects .project-card button:disabled img {
   filter: brightness(0.7);
 }
-.projects .project-card button div {
-  position: relative;
+.projects .project-card .project-card-label {
+  width: 100%;
+  height: auto;
+  align-content: center;
 }
 .projects .project-card img {
-  height: 7.2rem;
-  width: 9.3rem;
+  width: 12rem;
+  height: 9rem;
   padding: 0;
   border-radius: 1rem;
   cursor: pointer;
+  position: relative;
+  margin-bottom: 0.4rem;
 }
 .projects .project-card img:hover {
   outline: none;
@@ -594,7 +635,7 @@ p {
   cursor: pointer;
 }
 .projects .project-card .overlay {
-  background-color: #FBF1D9;
+  background-color: #B77423;
   opacity: 0.4;
   display: flex;
   position: absolute;
@@ -603,18 +644,21 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   text-align: center;
-  height: 7.2rem;
-  width: 9.3rem;
+  height: 9rem;
+  width: 12rem;
   padding: 0;
+  margin: 0;
   border-radius: 1rem;
+  justify-self: center;
 }
 .projects .project-card .overlay h3 {
   position: absolute;
   text-transform: uppercase;
   z-index: 900;
   opacity: 1;
-  color: #7B430A;
+  color: #fff;
   font-size: 1.5rem;
+  margin: 0.3rem;
 }
 
 /* modal styles */
@@ -716,8 +760,9 @@ p {
 .technologies {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  justify-self: center;
+  justify-content: start;
   align-content: center;
+  width: 100%;
 }
 .technologies ul {
   width: 100%;
@@ -756,8 +801,8 @@ p {
 .technologies .techItem label {
   display: inline-flex;
   flex-direction: column;
-  height: 4rem;
   width: 3.5rem;
+  height: 4rem;
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -787,15 +832,22 @@ p {
 }
 @media screen and (min-device-width: 1024px) {
   .technologies .techItem label img {
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 0.8rem;
+  }
+}
+@media screen and (min-device-width: 1424px) {
+  .technologies .techItem label img {
+    height: 5rem;
+    width: 5rem;
     margin-bottom: 0.8rem;
   }
 }
 @media screen and (min-device-width: 2000px) {
   .technologies .techItem label img {
-    height: 8rem;
-    width: 8rem;
+    height: 6.5rem;
+    width: 6.5rem;
   }
 }
 .technologies .techItem .label {
@@ -820,10 +872,12 @@ p {
 .contact {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  justify-self: center;
+  justify-content: start;
   align-content: center;
   width: 100%;
-  height: auto;
+}
+.contact .section-text {
+  margin: 0;
 }
 .contact ul {
   display: grid;
@@ -845,24 +899,22 @@ p {
     margin: 1rem 2rem;
   }
 }
-
-label {
+.contact label {
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
-
-span {
+.contact span {
   font-size: 1rem;
   margin: 0.5 0;
 }
 @media screen and (min-device-width: 1500px) {
-  span {
+  .contact span {
     font-size: 2rem;
   }
 }
 @media screen and (min-device-width: 2000px) {
-  span {
+  .contact span {
     font-size: 3rem;
   }
 }
@@ -879,32 +931,30 @@ footer {
   padding: 0;
   margin: 0;
 }
-
-.social-list ul {
+footer .social-list ul {
   display: flex;
 }
-
-li {
+footer li {
   margin: 0.5rem;
   cursor: pointer;
 }
-li img {
+footer li img {
   margin: 0.5rem;
 }
-li img:hover {
+footer li img:hover {
   outline: none;
   transform: translateY(-2px);
   box-shadow: 0 0.5rem 1rem rgba(123, 67, 10, 0.5);
 }
 @media screen and (min-device-width: 1024px) {
-  li img {
+  footer li img {
     width: 2rem;
     height: auto;
     margin: 1rem;
   }
 }
 @media screen and (min-device-width: 2000px) {
-  li img {
+  footer li img {
     width: 4rem;
     height: auto;
     margin: 2rem;

@@ -37,31 +37,27 @@
 		height: auto;
 		min-height: 7vh;
 		padding: 0rem;
+		column-gap: 0.3rem;
+
 		@media screen and (min-device-width: 768px) {
 			grid-template-columns: 1fr repeat(4, 10%);
 			column-gap: 0.3rem;
-			width: 100vw;
+			width: 100%;
 			height: auto;
 			border-radius: 0;
 			margin: 0;
 			padding: 0 1rem;
 		}
-		a {
-			font-size: 0.7rem;
+		p{
 			font-weight: 500;
 			text-decoration: none;
 			text-transform: uppercase;
 			cursor: pointer;
+			@media screen and (max-device-width: 768px) {
+				font-size: .7rem;
+			}
 			@media screen and (min-device-width: 768px) {
 				justify-content: flex-end;
-				font-size: 0.9rem;
-				font-weight: 400;
-			}
-			@media screen and (min-device-width: 1024px) {
-				font-size: 1.2rem;
-			}
-			@media screen and (min-device-width: 1500px) {
-				font-size: 2rem;
 			}
 		}
 		.mobile-logo {
@@ -73,9 +69,9 @@
 		.desktop-logo {
 			a {
 				display: none;
+				height: 100%;
 				@media screen and (min-device-width: 768px) {
 					justify-content: start;
-					padding: 0.3rem 1rem;
 					display: flex;
 					flex-direction: row;
 					align-items: center;
@@ -94,24 +90,18 @@
 				}
 			}
 		}
-		h3 {
+		.owner{
 			display: none;
-			width: 100%;
 			height: 100%;
 			@media screen and (min-device-width: 768px) {
 				display: flex;
-				font-size: 1.2rem;
 				text-transform: none;
 				padding: 0rem 1rem;
 				padding-top: 0.3rem;
 				font-family: "Satisfy", serif;
 				color: $off-white;
 			}
-			@media screen and (min-device-width: 1024px) {
-				font-size: 1.5rem;
-			}
 			@media screen and (min-device-width: 1500px) {
-				font-size: 3rem;
 				padding: 0 2rem;
 				padding-top: 1rem;
 			}

@@ -8,17 +8,19 @@ export default function Navigation() {
 				<li className="desktop-logo">
 					<a href="#hero">
 						<img src={Logo} alt="Letters MF" />
-					<div className="owner">
-						{" "}
-						<h3>Marcela Felix Fortis</h3>
-					</div>
+							{" "}
+							<h3 className="owner">Marcela Felix Fortis</h3>
 					</a>
 				</li>
 				<li>
-					<a href="#about">About</a>
+					<a href="#about">
+						<p>About</p>
+					</a>
 				</li>
 				<li>
-					<a href="#projects">Projects</a>
+					<a href="#projects">
+						<p>Projects</p>
+					</a>
 				</li>
 				<li className="mobile-logo">
 					<a href="#hero">
@@ -26,10 +28,10 @@ export default function Navigation() {
 					</a>
 				</li>
 				<li>
-					<a href="#tech">Tech</a>
+					<a href="#tech"><p>Tech</p></a>
 				</li>
 				<li>
-					<a href="#contact">Contact</a>
+					<a href="#contact"><p>Contact</p></a>
 				</li>
 			</ul>
 		</nav>
