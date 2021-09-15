@@ -27,7 +27,8 @@
 .about {
 	grid-area: about;
 	background-color: $white;
-	height: 95vh;
+	min-height: 70vh;
+	max-height: 95vh;
 }
 .projects {
 	grid-area: projects;
@@ -36,6 +37,7 @@
 .technologies {
 	grid-area: technologies;
 	background-color: $white;
+	min-height: 70vh;
 }
 .contact-info {
 	grid-area: contact;

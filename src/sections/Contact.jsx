@@ -32,12 +32,8 @@ export default function Contact() {
 	return (
 		<div className="contact-info">
 			<section className="contact" id="contact">
-				<div className="contact-section">
 					<TitleAndDescription text={sectionHeader} />
-					<div className="contact-list">
 						<List array={contactData} itemType={"contactItem"} />
-					</div>
-				</div>
 			</section>
 			<footer>
 				<div className="social-list">

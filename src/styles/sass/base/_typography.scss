@@ -2,34 +2,71 @@ h1,
 .h1 {
 	font-size: 2.2rem;
 	line-height: 2.56rem;
+	@media screen and (min-device-width: 1500px) {
+		font-size: 5rem;
+		line-height: 5.56rem;
+	}
+	@media screen and (min-device-width: 2000px) {
+		font-size: 6rem;
+		line-height: 6.5rem;
+	}
 }
 h2,
 .h2 {
 	font-weight: 500;
 	font-size: 1.375rem;
 	line-height: 1.75rem;
+	@media screen and (min-device-width: 1500px) {
+		font-size: 3rem;
+		line-height: 3.26rem;
+	}
+	@media screen and (min-device-width: 2000px) {
+		font-size: 4.5rem;
+		line-height: 5.5rem;
+	}
 }
 h3,
 .h3 {
 	font-size: 1rem;
 	line-height: 1.375rem;
+	@media screen and (min-device-width: 1500px) {
+		font-size: 2.5rem;
+		line-height: 2.375rem;
+	}
+	@media screen and (min-device-width: 2000px) {
+		font-size: 3.5rem;
+		line-height: 4.5rem;
+	}
 }
 p {
 	font-size: 1rem;
 	line-height: 1.375rem;
+	@media screen and (min-device-width: 1500px) {
+		font-size: 2rem;
+		line-height: 2.375rem;
+	}
+	@media screen and (min-device-width: 2000px) {
+		font-size: 3rem;
+		line-height: 4rem;
+	}
 }
 .section-text {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	align-self: baseline;
 	margin-bottom: 2rem;
 	h2 {
 		font-weight: 500;
 		padding: 0.5rem;
+		@media screen and (min-device-width: 1500px) {
+			padding: 2rem;
+		}
 	}
 	p {
 		font-weight: 400;
 		padding: 0.5rem;
+		@media screen and (min-device-width: 1500px) {
+			padding: 2rem;
+		}
 	}
 }

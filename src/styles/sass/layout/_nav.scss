@@ -5,7 +5,7 @@
 	position: fixed;
 	z-index: 199;
 	height: auto;
-	min-height: 2rem;
+	min-height: 7vh;
 	display: flex;
 	padding: 1rem;
 	justify-content: center;
@@ -14,7 +14,8 @@
 	background-color: rgba(252, 249, 247, 0.329);
 	margin: 0 auto;
 	@media screen and (min-device-width: 768px) {
-		padding:0;
+		padding: 0;
+		height: 7vh;
 	}
 
 	img {
@@ -26,23 +27,24 @@
 		background-color: rgba(112, 75, 32, 0.918);
 		border-radius: 44px;
 		display: grid;
-		grid-template-columns: 0rem repeat(5,min-content);
+		grid-template-columns: 0rem repeat(5, min-content);
 		align-items: center;
 		text-align: center;
-		margin:0;
+		margin: 0;
 		justify-content: space-evenly;
 		width: 100%;
 		max-width: 100%;
 		height: auto;
-		padding: .2rem .6rem;
+		min-height: 7vh;
+		padding: 0rem;
 		@media screen and (min-device-width: 768px) {
-			grid-template-columns: repeat(6,min-content);
+			grid-template-columns: 1fr repeat(4, 10%);
+			column-gap: 0.3rem;
 			width: 100vw;
+			height: auto;
 			border-radius: 0;
 			margin: 0;
-			padding: 0;
-			align-content: stretch;
-
+			padding: 0 1rem;
 		}
 		a {
 			font-size: 0.7rem;
@@ -52,9 +54,14 @@
 			cursor: pointer;
 			@media screen and (min-device-width: 768px) {
 				justify-content: flex-end;
-				font-size: 0.8rem;
-				padding: 0.8rem 1rem;
+				font-size: 0.9rem;
 				font-weight: 400;
+			}
+			@media screen and (min-device-width: 1024px) {
+				font-size: 1.2rem;
+			}
+			@media screen and (min-device-width: 1500px) {
+				font-size: 2rem;
 			}
 		}
 		.mobile-logo {
@@ -64,33 +71,49 @@
 		}
 
 		.desktop-logo {
-			a{
+			a {
 				display: none;
-				justify-content: center;
-				padding:0 4rem;
-
 				@media screen and (min-device-width: 768px) {
+					justify-content: start;
+					padding: 0.3rem 1rem;
 					display: flex;
 					flex-direction: row;
 					align-items: center;
 				}
 			}
 			img {
-				height: 2.8rem;
-				padding: 0;
+				height: auto;
+				width: 3rem;
+				@media screen and (min-device-width: 1024px) {
+					width: 4rem;
+					height: auto;
+				}
+				@media screen and (min-device-width: 1500px) {
+					width: 9rem;
+					height: auto;
+				}
 			}
 		}
 		h3 {
-			font-family: "Satisfy", serif;
-			color: $off-white;
-			margin-top: 0.2rem;
 			display: none;
-			font-size: 1.2rem;
 			width: 100%;
-			padding: 0rem 1rem;
+			height: 100%;
 			@media screen and (min-device-width: 768px) {
 				display: flex;
+				font-size: 1.2rem;
 				text-transform: none;
+				padding: 0rem 1rem;
+				padding-top: 0.3rem;
+				font-family: "Satisfy", serif;
+				color: $off-white;
+			}
+			@media screen and (min-device-width: 1024px) {
+				font-size: 1.5rem;
+			}
+			@media screen and (min-device-width: 1500px) {
+				font-size: 3rem;
+				padding: 0 2rem;
+				padding-top: 1rem;
 			}
 		}
 	}
