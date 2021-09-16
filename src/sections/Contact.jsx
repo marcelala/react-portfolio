@@ -33,7 +33,7 @@ export default function Contact() {
 		<div className="contact-info">
 			<section className="contact" id="contact">
 					<TitleAndDescription text={sectionHeader} />
-						<List array={contactData} itemType={"contactItem"} />
+					<List array={contactData} itemType={"contactItem"} />
 			</section>
 			<footer>
 				<div className="social-list">
