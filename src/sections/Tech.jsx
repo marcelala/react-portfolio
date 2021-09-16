@@ -6,8 +6,8 @@ import TitleAndDescription from "../components/reusables/TitleAndDescription";
 
 export default function Tech() {
 	const sectionHeader = {
-		title: "Technologies I Use",
-		description: "Some of the techology that I like to use:",
+		title: "Technologies",
+		description: "Some of the techology that I like to use are:",
 	};
 	return (
 		<section className="technologies" id="tech">

@@ -1,39 +1,32 @@
 // npm packages
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-//project files
-import Modal from "./Modal";
-import ProjectModal from "./ProjectModal";
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, onClick }) {
 	const { thumbnail, isReleased, title } = project;
-	const [isActive, setActive] = useState(false);
 	const thumbnailObject = require(`../assets/img/project-images/thumbnails/${thumbnail}`);
 	const thumbnailURL = thumbnailObject.default;
 	return (
-		<li>
-			<button disabled={isReleased === false} onClick={() => setActive(true)}>
-				<label htmlFor="project-title" className="project">
-					{!isReleased && (
-						<div className="overlay">
-							<h3>Coming soon</h3>
-						</div>
-					)}
+		<li className="project-card">
+			<button disabled={isReleased === false} onClick={onClick}>
+				{!isReleased && (
+					<div className="overlay">
+						<h3>Coming soon</h3>
+					</div>
+				)}
+				<label htmlFor="project" className="project-card-label">
 					<img
 						src={thumbnailURL}
 						className={"thumbnail"}
 						alt={"thumbnail of" + project.title}
 					/>
-					<h3>{title}</h3>
+					<span>
+						<p className="project-title">{title}</p>
+					</span>
 				</label>
 			</button>
-
-			<Modal handleClose={() => setActive(false)} active={isActive}>
-				<ProjectModal project={project} />
-			</Modal>
 		</li>
 	);
 }
-
 ProjectCard.propTypes = {
 	thumbnail: PropTypes.string,
 	title: PropTypes.string,

@@ -13,7 +13,7 @@ function ListItem({ item, itemType }) {
 						className={"icon" + itemType}
 						alt={"icon of" + item.name}
 					/>
-					<span className="label">{item.label}</span>
+					<span className="label"><p className="smaller"> {item.label} </p> </span>
 				</label>
 		</li>
 	);

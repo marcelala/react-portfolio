@@ -26,7 +26,6 @@ This is my portfolio, welcome! Click [here](https://marcelaf-portfolio.web.app/)
   <br/>
 
 
-<br/>
 
 ## Specification
 
@@ -36,7 +35,7 @@ The goal of this project was to build a simple single page application to enable
 <br/>
 
 
-<br/>
+
 
 ## Project Organisation
 
@@ -63,6 +62,7 @@ The goal of this project was to build a simple single page application to enable
 The UI component tree allows to visualize the different parts of the application.
 <br/>
 [View on Whimsical](https://whimsical.com/portfolio-page-M45VgG539Pf4mc2nzd4Fza)
+
 <br/>
 
 ### Design mockup

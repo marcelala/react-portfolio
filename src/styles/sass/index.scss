@@ -1,19 +1,22 @@
+/*FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
+/*ABSTRACTS*/
 @import "abstracts/_mixins.scss";
 @import "abstracts/_variables.scss";
-@import "base/_typography.scss";
 
+/*BASE*/
 @import "base/_base.scss";
-@import "components/_background.scss";
+@import "base/_background.scss";
+@import "base/_typography.scss";
 @import "layout/_template.scss";
 @import "layout/_nav.scss";
+@import "layout/_button.scss";
 
-@import "components/_button.scss";
-
-@import "components/_hero.scss";
-@import "components/_about.scss";
-@import "components/_projects.scss";
-@import "components/_tech.scss";
-@import "components/_contact.scss";
+/*SECTIONS*/
+@import "sections/_hero.scss";
+@import "sections/_about.scss";
+@import "sections/_projects.scss";
+@import "sections/_tech.scss";
+@import "sections/_contact.scss";

@@ -75,13 +75,15 @@
 
 .btn-primary,
 .btn-secondary {
-	width: 19.4rem;
-	height: 2.75rem;
+	width: 20rem;
+	height: 2.5rem;
 	border: 2px solid $brown;
 	font-size: 1rem;
 	font-weight: 700;
 	margin: 0.2rem;
 	cursor: pointer;
+	width: 100%;
+	max-width: 80vw;
 	&:hover {
 		outline: none;
 		transform: translateY(-2px);
@@ -97,4 +99,18 @@
 .btn-secondary {
 	background-color: $white;
 	color: $brown;
+}
+.btn-close {
+	position: fixed;
+	z-index: 10000;
+	border: none;
+	background-color: transparent;
+	margin: 0.5rem;
+	font-size: 1rem;
+	cursor: pointer;
+	right: 5%;
+	&:hover {
+		outline: none;
+		transform: translateY(-4px);
+	}
 }

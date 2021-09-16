@@ -1,0 +1,19 @@
+.about {
+	@include section-grid;
+	margin: 0 auto;
+	img{
+		max-width: 9rem;
+		position: relative;
+		margin-bottom: 2rem;
+		align-content: center;
+		border-radius: 100%;
+		justify-self: center;
+    position: relative;
+    align-self: center;
+	}
+	.section-text{
+		justify-self: center;
+		position: relative;
+		align-self: center;
+	}
+}

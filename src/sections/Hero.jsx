@@ -11,9 +11,9 @@ export default function Hero() {
 				<div className="hero-text-box">
 					<span className="h1">Hello, I'm </span>
 					<span className="h1 h1-name"> Marcela Fortis</span>
-					<div className="h2-sub">
+					<h2 className="h2-sub">
 						<TypedText />
-					</div>
+					</h2>
 				</div>
 				<div className="hero-btn-box">
 					<a href="#About" className="btn btn--brown">

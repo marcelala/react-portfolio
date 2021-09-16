@@ -14,11 +14,11 @@ export default function Contact() {
 			"Here is my contact information in case you would like to start a collaboration.",
 	};
 
-	const socialList = socialData.map((item) => {
+	const socialList = socialData.map((item, index) => {
 		const imageObject = require(`../assets/img/icons/${item.icon}`);
 		const imageURL = imageObject.default;
 		return (
-			<li>
+			<li key={index}>
 				<a href={item.name}>
 					<label htmlFor="icon-name" className="icon-name">
 						<img src={imageURL} alt={"icon of " + item.label} />
@@ -30,13 +30,11 @@ export default function Contact() {
 	});
 
 	return (
-		<section className="contact" id="contact">
-			<div className="contact-section">
-				<TitleAndDescription text={sectionHeader} />
-				<div className="contact-list">
+		<div className="contact-info">
+			<section className="contact" id="contact">
+					<TitleAndDescription text={sectionHeader} />
 					<List array={contactData} itemType={"contactItem"} />
-				</div>
-			</div>
+			</section>
 			<footer>
 				<div className="social-list">
 					<ul>{socialList}</ul>
@@ -45,6 +43,6 @@ export default function Contact() {
 					© Marcela Felix Fortis {"   "} {currentYear}
 				</p>
 			</footer>
-		</section>
+		</div>
 	);
 }

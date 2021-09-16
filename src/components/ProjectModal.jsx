@@ -5,8 +5,9 @@ import PropTypes from "prop-types";
 import Button from "./reusables/Button";
 import TitleAndDescription from "./reusables/TitleAndDescription";
 import Pills from "./Pills";
+import closeIcon from "../assets/img/icons/close.svg";
 
-export default function ProjectModal({ project }) {
+export default function ProjectModal({ project, setModal }) {
 	const { title, text, picture, repo, url, techUsed } = project;
 	const screenshot = require(`../assets/img/project-images/pictures/${picture}`);
 	const pictureURL = screenshot.default;
@@ -15,8 +16,11 @@ export default function ProjectModal({ project }) {
 		description: text,
 	};
 	return (
-		<article className="modal">
-			<img src={pictureURL} alt="thumbnail of project" />
+		<article className="project-modal">
+			<button className="btn-close" onClick={() => setModal(null)}>
+				<img src={closeIcon} alt="x" />
+			</button>
+			<img src={pictureURL} alt="thumbnail of project" className="modal-img" />
 			<div className="half">
 				<TitleAndDescription text={projectHeader} />
 				<Pills data={techUsed} />
