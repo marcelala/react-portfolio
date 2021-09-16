@@ -6,7 +6,8 @@
 	scroll-behavior: smooth;
 	justify-content: center;
 	width: 100%;
-
+	align-content: center;
+	justify-items: center;
 	grid-template-areas:
 		"nav"
 		"hero"
@@ -42,6 +43,7 @@
 .contact-info {
 	grid-area: contact;
 	background-color: $beige-light;
+	width: 100%;
 	footer {
 		background-color: $brown-light;
 		color: $beige-light;
