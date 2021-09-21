@@ -33,12 +33,12 @@ section {
   padding: 2rem;
   margin: 0 auto;
 }
-@media screen and (min-device-width: 760px) {
+@media screen and (min-width: 760px) {
   section {
     padding: 3rem;
   }
 }
-@media screen and (min-device-width: 1500px) {
+@media screen and (min-width: 1500px) {
   section {
     padding: 4rem;
   }
@@ -90,14 +90,14 @@ h1,
   font-size: 2.2rem;
   line-height: 2.56rem;
 }
-@media screen and (min-device-width: 1500px) {
+@media screen and (min-width: 1500px) {
   h1,
 .h1 {
     font-size: 4rem;
     line-height: 4.56rem;
   }
 }
-@media screen and (min-device-width: 2000px) {
+@media screen and (min-width: 2000px) {
   h1,
 .h1 {
     font-size: 4.5rem;
@@ -111,14 +111,14 @@ h2,
   font-size: 1.375rem;
   line-height: 1.75rem;
 }
-@media screen and (min-device-width: 1500px) {
+@media screen and (min-width: 1500px) {
   h2,
 .h2 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
-@media screen and (min-device-width: 2000px) {
+@media screen and (min-width: 2000px) {
   h2,
 .h2 {
     font-size: 3rem;
@@ -131,14 +131,14 @@ h3,
   font-size: 1rem;
   line-height: 1.375rem;
 }
-@media screen and (min-device-width: 1500px) {
+@media screen and (min-width: 1500px) {
   h3,
 .h3 {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
-@media screen and (min-device-width: 2000px) {
+@media screen and (min-width: 2000px) {
   h3,
 .h3 {
     font-size: 2.5rem;
@@ -150,13 +150,13 @@ p {
   font-size: 1rem;
   line-height: 1.375rem;
 }
-@media screen and (min-device-width: 1500px) {
+@media screen and (min-width: 1500px) {
   p {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
-@media screen and (min-device-width: 2000px) {
+@media screen and (min-width: 2000px) {
   p {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -167,13 +167,13 @@ p.smaller {
   font-size: 0.8rem;
   line-height: 1rem;
 }
-@media screen and (min-device-width: 1500px) {
+@media screen and (min-width: 1500px) {
   p.smaller {
     font-size: 1rem;
     line-height: 1.375rem;
   }
 }
-@media screen and (min-device-width: 2000px) {
+@media screen and (min-width: 2000px) {
   p.smaller {
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -187,11 +187,10 @@ p.smaller {
   margin-bottom: 2rem;
 }
 .section-text h2 {
-  text-align: center;
   font-weight: 500;
   padding: 0.5rem;
 }
-@media screen and (min-device-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .section-text h2 {
     padding: 2rem;
   }
@@ -200,7 +199,7 @@ p.smaller {
   font-weight: 400;
   padding: 0.5rem;
 }
-@media screen and (min-device-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .section-text p {
     padding: 2rem;
   }
@@ -276,7 +275,7 @@ p.smaller {
   background-color: rgba(252, 249, 247, 0.329);
   margin: 0 auto;
 }
-@media screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav {
     padding: 0;
     height: 7vh;
@@ -305,7 +304,7 @@ p.smaller {
   -moz-column-gap: 0.3rem;
        column-gap: 0.3rem;
 }
-@media screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav ul {
     grid-template-columns: 1fr repeat(4, 10%);
     -moz-column-gap: 0.3rem;
@@ -328,12 +327,12 @@ p.smaller {
     font-size: 0.7rem;
   }
 }
-@media screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav ul p {
     justify-content: flex-end;
   }
 }
-@media screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav ul .mobile-logo {
     display: none;
   }
@@ -342,7 +341,7 @@ p.smaller {
   display: none;
   height: 100%;
 }
-@media screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav ul .desktop-logo a {
     justify-content: start;
     display: flex;
@@ -354,13 +353,13 @@ p.smaller {
   height: auto;
   width: 3rem;
 }
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .nav ul .desktop-logo img {
     width: 4rem;
     height: auto;
   }
 }
-@media screen and (min-device-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .nav ul .desktop-logo img {
     width: 9rem;
     height: auto;
@@ -370,7 +369,7 @@ p.smaller {
   display: none;
   height: 100%;
 }
-@media screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav ul .owner {
     display: flex;
     text-transform: none;
@@ -380,7 +379,7 @@ p.smaller {
     color: #FBF1D9;
   }
 }
-@media screen and (min-device-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .nav ul .owner {
     padding: 0 2rem;
     padding-top: 1rem;
@@ -517,10 +516,12 @@ p.smaller {
   padding: 0.4rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  text-align: center;
 }
 .hero .h1-name {
   font-family: "Satisfy", serif;
   color: #B77423;
+  text-align: center;
 }
 .hero-btn-box {
   position: relative;
@@ -533,6 +534,7 @@ p.smaller {
   position: relative;
   margin: auto;
   font-weight: 500;
+  text-align: center;
 }
 
 .about {
@@ -582,7 +584,7 @@ p.smaller {
   justify-items: center;
   align-items: center;
 }
-@media screen and (min-device-width: 750px) {
+@media screen and (min-width: 750px) {
   .projects .projects-list {
     row-gap: 2rem;
     -moz-column-gap: 1.75rem;
@@ -591,7 +593,7 @@ p.smaller {
     align-items: center;
   }
 }
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .projects .projects-list {
     row-gap: 2.5rem;
     -moz-column-gap: 2rem;
@@ -600,7 +602,7 @@ p.smaller {
     align-items: center;
   }
 }
-@media screen and (min-device-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .projects .projects-list {
     grid-template-columns: repeat(auto-fit, minmax(234px, 1fr));
     row-gap: 2.5rem;
@@ -610,7 +612,7 @@ p.smaller {
     align-items: center;
   }
 }
-@media screen and (min-device-width: 1700px) {
+@media screen and (min-width: 1700px) {
   .projects .projects-list {
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     row-gap: 2.5rem;
@@ -630,6 +632,10 @@ p.smaller {
   justify-items: center;
   justify-content: center;
   align-content: flex-start;
+  color: #7B430A;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
 }
 .projects .project-card button {
   background-color: transparent;
@@ -639,23 +645,14 @@ p.smaller {
   padding: 0;
   width: 100%;
   height: 100%;
-}
-.projects .project-card button:disabled img {
-  filter: brightness(0.7);
-}
-.projects .project-card .project-card-label {
-  width: 100%;
-  height: auto;
-  align-content: center;
-}
-.projects .project-card .project-title {
   color: #7B430A;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 0.2rem;
-  position: relative;
 }
-.projects .project-card img, .projects .project-card .overlay {
+.projects .project-card button:disabled {
+  opacity: 1;
+  color: #7B430A;
+}
+.projects .project-card img,
+.projects .project-card .overlay {
   width: 12rem;
   height: 9rem;
 }
@@ -677,18 +674,14 @@ p.smaller {
   display: flex;
   position: absolute;
   align-items: center;
-  z-index: 100;
   text-align: center;
   border-radius: 1rem;
-}
-.projects .project-card .overlay h3 {
-  position: absolute;
-  text-transform: uppercase;
   z-index: 900;
-  opacity: 1;
+  text-transform: uppercase;
   color: #fff;
   font-size: 1.5rem;
-  margin: 0.3rem;
+  padding: 0.5rem;
+  font-weight: 500;
 }
 
 /* modal styles */
@@ -765,8 +758,7 @@ p.smaller {
   width: 100%;
   max-width: 80vw;
 }
-
-.pills {
+.project-modal ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   -moz-column-gap: 0.2rem;
@@ -776,7 +768,7 @@ p.smaller {
   padding: 0.2rem;
   padding-bottom: 1rem;
 }
-.pills li {
+.project-modal ul li {
   position: relative;
   border-radius: 0.5rem;
   border: 1px solid #B77423;
@@ -808,7 +800,7 @@ p.smaller {
   justify-items: center;
   align-items: center;
 }
-@media screen and (min-device-width: 750px) {
+@media screen and (min-width: 750px) {
   .technologies ul {
     row-gap: 2rem;
     -moz-column-gap: 1.75rem;
@@ -817,7 +809,7 @@ p.smaller {
     align-items: center;
   }
 }
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .technologies ul {
     row-gap: 2.5rem;
     -moz-column-gap: 2rem;
@@ -826,7 +818,7 @@ p.smaller {
     align-items: center;
   }
 }
-@media screen and (min-device-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .technologies ul {
     grid-template-columns: repeat(auto-fit, minmax(91px, 1fr));
     row-gap: 2.5rem;
@@ -836,7 +828,7 @@ p.smaller {
     align-items: center;
   }
 }
-@media screen and (min-device-width: 1700px) {
+@media screen and (min-width: 1700px) {
   .technologies ul {
     grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
     row-gap: 2.5rem;
@@ -855,20 +847,20 @@ p.smaller {
   align-items: center;
   padding: 0;
 }
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .technologies .techItem label {
     width: 4rem;
     height: 5rem;
     color: transparent;
   }
 }
-@media screen and (min-device-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .technologies .techItem label {
     width: 5rem;
     height: 6rem;
   }
 }
-@media screen and (min-device-width: 2000px) {
+@media screen and (min-width: 2000px) {
   .technologies .techItem label {
     width: 6rem;
     height: 7rem;
@@ -888,17 +880,17 @@ p.smaller {
   text-align: center;
   font-weight: 400;
 }
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .technologies .techItem .label {
     font-size: 1rem;
   }
 }
-@media screen and (min-device-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .technologies .techItem .label {
     font-size: 1.3rem;
   }
 }
-@media screen and (min-device-width: 2000px) {
+@media screen and (min-width: 2000px) {
   .technologies .techItem .label {
     font-size: 1.8rem;
   }
@@ -923,14 +915,14 @@ p.smaller {
 .contact img {
   margin: 0.5rem;
 }
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .contact img {
     width: 1.5rem;
     height: auto;
     margin: 0.5rem 1rem;
   }
 }
-@media screen and (min-device-width: 2000px) {
+@media screen and (min-width: 2000px) {
   .contact img {
     width: 3rem;
     height: auto;
@@ -946,12 +938,12 @@ p.smaller {
   font-size: 1rem;
   margin: 0.5 1rem;
 }
-@media screen and (min-device-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .contact span {
     font-size: 2rem;
   }
 }
-@media screen and (min-device-width: 2000px) {
+@media screen and (min-width: 2000px) {
   .contact span {
     font-size: 3rem;
   }
@@ -984,14 +976,14 @@ footer li img:hover {
   transform: translateY(-2px);
   box-shadow: 0 0.5rem 1rem rgba(123, 67, 10, 0.5);
 }
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 1024px) {
   footer li img {
     width: 2rem;
     height: auto;
     margin: 1rem;
   }
 }
-@media screen and (min-device-width: 2000px) {
+@media screen and (min-width: 2000px) {
   footer li img {
     width: 4rem;
     height: auto;

@@ -8,21 +8,19 @@ export default function ProjectCard({ project, onClick }) {
 	return (
 		<li className="project-card">
 			<button disabled={isReleased === false} onClick={onClick}>
+				<div>
 				{!isReleased && (
 					<div className="overlay">
-						<h3>Coming soon</h3>
+						Coming soon
 					</div>
 				)}
-				<label htmlFor="project" className="project-card-label">
 					<img
 						src={thumbnailURL}
 						className={"thumbnail"}
 						alt={"thumbnail of" + project.title}
 					/>
-					<span>
-						<p className="project-title">{title}</p>
-					</span>
-				</label>
+					</div>
+						{title}
 			</button>
 		</li>
 	);

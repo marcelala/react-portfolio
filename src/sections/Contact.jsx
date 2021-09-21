@@ -5,6 +5,7 @@ import contactData from "../data/contactData";
 import socialData from "../data/socialData";
 import List from "../components/reusables/List";
 import TitleAndDescription from "../components/reusables/TitleAndDescription";
+import ContactItem from "../components/ContactItem";
 
 export default function Contact() {
 	const currentYear = new Date().getFullYear();
@@ -33,7 +34,7 @@ export default function Contact() {
 		<div className="contact-info">
 			<section className="contact" id="contact">
 					<TitleAndDescription text={sectionHeader} />
-					<List array={contactData} itemType={"contactItem"} />
+					<List array={contactData} Component={ContactItem} />
 			</section>
 			<footer>
 				<div className="social-list">

@@ -1,8 +1,8 @@
 .contact {
 	@include section-grid;
-		justify-items: center;
+	justify-items: center;
 
-	.section-text{
+	.section-text {
 		margin: 0;
 	}
 	ul {
@@ -10,12 +10,12 @@
 	}
 	img {
 		margin: 0.5rem;
-		@media screen and (min-device-width: 1024px) {
+		@media screen and (min-width: 1024px) {
 			width: 1.5rem;
 			height: auto;
 			margin: 0.5rem 1rem;
 		}
-		@media screen and (min-device-width: 2000px) {
+		@media screen and (min-width: 2000px) {
 			width: 3rem;
 			height: auto;
 			margin: 1rem 2rem;
@@ -29,10 +29,10 @@
 	span {
 		font-size: 1rem;
 		margin: 0.5 1rem;
-		@media screen and (min-device-width: 1500px) {
+		@media screen and (min-width: 1500px) {
 			font-size: 2rem;
 		}
-		@media screen and (min-device-width: 2000px) {
+		@media screen and (min-width: 2000px) {
 			font-size: 3rem;
 		}
 	}
@@ -66,12 +66,12 @@ footer {
 				transform: translateY(-2px);
 				box-shadow: 0 0.5rem 1rem rgba($brown, 0.5);
 			}
-			@media screen and (min-device-width: 1024px) {
+			@media screen and (min-width: 1024px) {
 				width: 2rem;
 				height: auto;
 				margin: 1rem;
 			}
-			@media screen and (min-device-width: 2000px) {
+			@media screen and (min-width: 2000px) {
 				width: 4rem;
 				height: auto;
 				margin: 2rem;
