@@ -14,12 +14,12 @@ export default function Navigation() {
 				</li>
 				<li>
 					<a href="#about">
-						<p>About</p>
+						About
 					</a>
 				</li>
 				<li>
 					<a href="#projects">
-						<p>Projects</p>
+						Projects
 					</a>
 				</li>
 				<li className="mobile-logo">
@@ -28,10 +28,10 @@ export default function Navigation() {
 					</a>
 				</li>
 				<li>
-					<a href="#tech"><p>Tech</p></a>
+					<a href="#tech">Tech</a>
 				</li>
 				<li>
-					<a href="#contact"><p>Contact</p></a>
+					<a href="#contact">Contact</a>
 				</li>
 			</ul>
 		</nav>

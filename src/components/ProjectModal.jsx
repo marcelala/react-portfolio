@@ -3,6 +3,8 @@ import React from "react";
 import PropTypes from "prop-types";
 //project files
 import Button from "./reusables/Button";
+import List from "./reusables/List";
+import Pill from "./Pill";
 import TitleAndDescription from "./reusables/TitleAndDescription";
 import Pills from "./Pills";
 import closeIcon from "../assets/img/icons/close.svg";
@@ -23,7 +25,7 @@ export default function ProjectModal({ project, setModal }) {
 			<img src={pictureURL} alt="thumbnail of project" className="modal-img" />
 			<div className="half">
 				<TitleAndDescription text={projectHeader} />
-				<Pills data={techUsed} />
+				<List array={techUsed} Component={Pill}/>
 				<div className="btn-box">
 					<a href={url}>
 						<Button theme={"primary"}>Website</Button>
