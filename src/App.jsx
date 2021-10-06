@@ -1,6 +1,6 @@
 import React from "react";
 //project files
-import "./styles/css/index.css";
+import "./styles/index.css";
 import Navigation from "./components/Navigation";
 import Hero from "./sections/Hero";
 import About from "./sections/About";

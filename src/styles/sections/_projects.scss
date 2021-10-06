@@ -1,5 +1,6 @@
 .projects {
 	@include section-grid;
+
 	.projects-list {
 		@include ul-grid(180px);
 	}
