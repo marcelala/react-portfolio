@@ -27,7 +27,7 @@ const projectData = [
 	},
 	{
 		title: "Busy bees 2.0",
-		text: "The goal of this project was to fetch data from a RESTful API and display the user's packages on a simple web application. Additionally, a map displays the pick-up location and its coordinates for each package. This application supports English and Swedish languages.",
+		text: "This project fetches data from a RESTful API and displays the user's packages. A map displays the pick-up location and its coordinates. English and Swedish languages support.",
 		techUsed: ["Javascript", "React", "Sass", "Figma", "Firebase", "RESTful API", "Mapbox", "i18next"],
 		thumbnail: "1-BusyBees.png",
 		picture: "1-BusyBees.png",

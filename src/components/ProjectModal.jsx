@@ -6,7 +6,6 @@ import Button from "./reusables/Button";
 import List from "./reusables/List";
 import Pill from "./Pill";
 import TitleAndDescription from "./reusables/TitleAndDescription";
-import Pills from "./Pills";
 import closeIcon from "../assets/img/icons/close.svg";
 
 export default function ProjectModal({ project, setModal }) {
@@ -19,10 +18,12 @@ export default function ProjectModal({ project, setModal }) {
 	};
 	return (
 		<article className="project-modal">
+			<div className="modal-top">
 			<button className="btn-close" onClick={() => setModal(null)}>
 				<img src={closeIcon} alt="x" />
 			</button>
 			<img src={pictureURL} alt="thumbnail of project" className="modal-img" />
+			</div>
 			<div className="half">
 				<TitleAndDescription text={projectHeader} />
 				<List array={techUsed} Component={Pill}/>

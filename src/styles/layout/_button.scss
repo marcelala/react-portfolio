@@ -101,14 +101,14 @@
 	color: $brown;
 }
 .btn-close {
-	position: fixed;
+	position: absolute;
 	z-index: 10000;
 	border: none;
 	background-color: transparent;
-	margin: 0.5rem;
-	font-size: 1rem;
+	margin: 0;
 	cursor: pointer;
-	right: 5%;
+	right: 3%;
+	top:3%;
 	&:hover {
 		outline: none;
 		transform: translateY(-4px);
