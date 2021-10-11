@@ -33,16 +33,6 @@ section {
   padding: 2rem;
   margin: 0 auto;
 }
-@media screen and (min-width: 760px) {
-  section {
-    padding: 3rem;
-  }
-}
-@media screen and (min-width: 1500px) {
-  section {
-    padding: 4rem;
-  }
-}
 
 article,
 nav,
@@ -91,15 +81,15 @@ h1,
 @media screen and (min-width: 1500px) {
   h1,
 .h1 {
-    font-size: 4rem;
-    line-height: 4.56rem;
+    font-size: 3rem;
+    line-height: 3.56rem;
   }
 }
 @media screen and (min-width: 2000px) {
   h1,
 .h1 {
-    font-size: 4.5rem;
-    line-height: 5rem;
+    font-size: 4rem;
+    line-height: 4.5rem;
   }
 }
 
@@ -112,15 +102,15 @@ h2,
 @media screen and (min-width: 1500px) {
   h2,
 .h2 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 @media screen and (min-width: 2000px) {
   h2,
 .h2 {
     font-size: 3rem;
-    line-height: 4rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -132,15 +122,15 @@ h3,
 @media screen and (min-width: 1500px) {
   h3,
 .h3 {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
   }
 }
 @media screen and (min-width: 2000px) {
   h3,
 .h3 {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -150,14 +140,14 @@ p {
 }
 @media screen and (min-width: 1500px) {
   p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 @media screen and (min-width: 2000px) {
   p {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -188,19 +178,9 @@ p.smaller {
   font-weight: 500;
   padding: 0.5rem;
 }
-@media screen and (min-width: 1500px) {
-  .section-text h2 {
-    padding: 2rem;
-  }
-}
 .section-text p {
   font-weight: 400;
   padding: 0.5rem;
-}
-@media screen and (min-width: 1500px) {
-  .section-text p {
-    padding: 2rem;
-  }
 }
 
 .App {
@@ -320,17 +300,17 @@ p.smaller {
 @media screen and (min-width: 768px) {
   .nav ul .nav-link {
     justify-content: flex-end;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 1500px) {
   .nav ul .nav-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 2000px) {
   .nav ul .nav-link {
-    font-size: 1.75rem;
+    font-size: 1.3rem;
   }
 }
 .nav .mobile-logo {
@@ -368,9 +348,9 @@ p.smaller {
 }
 @media screen and (min-width: 1400px) {
   .nav .desktop-logo img {
-    width: 5rem;
+    width: 4rem;
     height: auto;
-    padding: 0.2rem 0;
+    padding: 0.3rem 0;
   }
 }
 @media screen and (min-width: 1800px) {
@@ -396,12 +376,12 @@ p.smaller {
 }
 @media screen and (min-width: 1400px) {
   .nav .owner {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 1800px) {
   .nav .owner {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
 }
 
