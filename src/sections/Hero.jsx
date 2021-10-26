@@ -1,12 +1,12 @@
 import React from "react";
 //project files
 import TypedText from "../components/anti-requirements/TypedText";
-import wallpaper from "../assets/img/grass1.jpg";
+import wallpaper from "../assets/img/grass.jpg";
 
 export default function Hero() {
 	return (
 		<div className="background">
-			<section className="hero" id="hero">
+			<div className="hero" id="hero">
 				<img className="background__image" src={wallpaper} alt="background" />
 				<div className="hero-text-box">
 					<span className="h1">Hello, I'm </span>
@@ -20,7 +20,7 @@ export default function Hero() {
 						Get to know me
 					</a>
 				</div>
-			</section>
+			</div>
 		</div>
 	);
 }

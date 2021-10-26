@@ -1,0 +1,23 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/*ABSTRACTS*/
+@import "abstracts/_mixins";
+@import "abstracts/_variables";
+
+/*BASE*/
+@import "base/_base";
+@import "base/_background";
+@import "base/_typography";
+@import "layout/_template";
+@import "layout/_nav";
+@import "layout/_button";
+
+/*SECTIONS*/
+@import "sections/_hero";
+@import "sections/_about";
+@import "sections/_projects";
+@import "sections/_tech";
+@import "sections/_skills";
+@import "sections/_contact";

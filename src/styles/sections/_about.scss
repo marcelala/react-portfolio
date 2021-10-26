@@ -1,0 +1,27 @@
+#about {
+	margin: 0 auto;
+	grid-area: about;
+	background-color: $white;
+	min-height: 70vh;
+	max-height: 95vh;
+	justify-items:center;
+	@include section-grid;
+
+	img{
+		max-width: 9rem;
+		position: relative;
+		margin-bottom: 2rem;
+		align-content: center;
+		border-radius: 100%;
+		justify-items:center;
+		align-self: center;
+	}
+	.section-text{
+		justify-self: center;
+		position: relative;
+		align-self: center;
+		p{
+		text-transform: full-width;
+			padding: 0;
+	}}
+}

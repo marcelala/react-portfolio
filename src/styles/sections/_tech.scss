@@ -1,5 +1,12 @@
 .technologies {
+	grid-area: technologies;
+	background-color: $white;
+	min-height: 60vh;
+	padding: $space-large;
 	@include section-grid;
+	@include respond(desktop){
+		padding: $space-x-large;
+	}
 	ul {
 		@include ul-grid(70px);
 	}
@@ -16,10 +23,6 @@
 				width: 4rem;
 				height: 5rem;
 				color: transparent;
-			}
-			@media screen and (min-width: 1400px) {
-				width: 5rem;
-				height: 6rem;
 			}
 			@media screen and (min-width: 2000px) {
 				width: 6rem;

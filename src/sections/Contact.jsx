@@ -31,8 +31,8 @@ export default function Contact() {
 	});
 
 	return (
-		<div className="contact-info">
-			<section className="contact" id="contact">
+		<>
+			<section id="contact">
 					<TitleAndDescription text={sectionHeader} />
 					<List array={contactData} Component={ContactItem} />
 			</section>
@@ -44,6 +44,6 @@ export default function Contact() {
 					© Marcela Felix Fortis {"   "} {currentYear}
 				</p>
 			</footer>
-		</div>
+		</>
 	);
 }

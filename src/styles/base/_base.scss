@@ -14,16 +14,9 @@ html {
 section {
 	width: 100%;
 	height: auto;
-	align-items: center;
-	justify-content: center;
-	padding: 2rem;
+	align-items: start;
+	justify-items: center;
 	margin: 0 auto;
-	@media screen and (min-width: 760px) {
-		padding: 3rem;
-	}
-	@media screen and (min-width: 1500px) {
-		padding: 4rem;
-	}
 }
 
 article,

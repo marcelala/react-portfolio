@@ -4,21 +4,19 @@ import Logo from "../assets/img/logos/MF-white.png";
 export default function Navigation() {
 	return (
 		<nav className="nav">
+				<a href="#hero" className="desktop-logo">
+					<img src={Logo} alt="Letters MF" />
+					{" "}
+					<span className="owner"> Marcela Felix Fortis </span>
+				</a>
 			<ul className="nav-list">
-				<li className="desktop-logo">
-					<a href="#hero">
-						<img src={Logo} alt="Letters MF" />
-							{" "}
-							<h3 className="owner">Marcela Felix Fortis</h3>
-					</a>
-				</li>
 				<li>
-					<a href="#about">
+					<a href="#about" className={"nav-link"}>
 						About
 					</a>
 				</li>
 				<li>
-					<a href="#projects">
+					<a href="#projects" className={"nav-link"}>
 						Projects
 					</a>
 				</li>
@@ -28,10 +26,10 @@ export default function Navigation() {
 					</a>
 				</li>
 				<li>
-					<a href="#tech">Tech</a>
+					<a href="#tech" className={"nav-link"}>Tech</a>
 				</li>
 				<li>
-					<a href="#contact">Contact</a>
+					<a href="#contact" className={"nav-link"}>Contact</a>
 				</li>
 			</ul>
 		</nav>
