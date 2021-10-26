@@ -68,6 +68,7 @@ p.smaller {
 	justify-content: center;
 	flex-direction: column;
 	margin-bottom: 2rem;
+	padding-right: $space-large;
 	h2 {
 		font-weight: 500;
 		padding: 0.5rem;
@@ -75,5 +76,8 @@ p.smaller {
 	p {
 		font-weight: 400;
 		padding: 0.5rem;
+		text-transform: full-width;
+		line-height: 1.5rem;
+
 	}
 }

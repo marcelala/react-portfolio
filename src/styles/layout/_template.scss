@@ -1,7 +1,6 @@
 .App {
 	font-family: "Montserrat", sans-serif;
 	display: grid;
-	grid: auto-flow min-content / 1fr;
 	grid-gap: 0.5rem;
 	scroll-behavior: smooth;
 	justify-content: center;
@@ -14,41 +13,8 @@
 		"about"
 		"projects"
 		"technologies"
+		"skills"
 		"contact"
 		"footer";
 }
-.nav {
-	grid-area: nav;
-}
-.hero {
-	grid-area: hero;
-	margin: 0;
-	padding: 0;
-}
-.about {
-	grid-area: about;
-	background-color: $white;
-	min-height: 70vh;
-	max-height: 95vh;
-}
-.projects {
-	grid-area: projects;
-	background-color: $beige-light;
-}
-.technologies {
-	grid-area: technologies;
-	background-color: $white;
-	min-height: 60vh;
-}
-.contact-info {
-	grid-area: contact;
-	background-color: $beige-light;
-	width: 100%;
-	footer {
-		background-color: $brown-light;
-		color: $beige-light;
-		.label {
-			display: none;
-		}
-	}
-}
+

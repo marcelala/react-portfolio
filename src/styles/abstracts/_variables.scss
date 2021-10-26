@@ -32,8 +32,15 @@ $pink-blush: #CD7167;
 
 $default-font-size:1.6rem;
 
-//GRID VARIABLES
+//SPACE VARIABLES
+$space-x-small: .5rem;
+$space-small: 1rem;
+$space-medium: 1.5rem;
+$space-large: 2rem;
+$space-x-large: 4rem;
 
-$horizontal-gutter:6rem;
-$vertical-gutter:8rem;
-$vertical-gutter-small:4rem;
+  // Media queries
+$media-phablet: 400px;
+$media-tablet: 550px;
+$media-desktop: 1000px;
+$media-ultra-wide: 2000px;

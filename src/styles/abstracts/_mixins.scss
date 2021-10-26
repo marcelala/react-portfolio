@@ -1,20 +1,19 @@
-/* MEDIA QUERY BREAKPOINTS
-    0-576px for portrait phones.
-    577-768px for tablets in portrait mode.
-    769-991 for tablets in landcape mode.
-    992-1200px for laptops.
-    1200px+ for large devices.
-
-
-*/
 @mixin section-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	justify-content: start;
+	justify-content: flex-start;
 	align-content: center;
 	width: 100%;
 	max-width: 100%;
 	position: relative;
+	justify-items: center;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: $space-large;
+	@media screen and (min-width: 750px) {
+		padding: $space-x-large;
+	}
+
 }
 
 @mixin ul-grid($min) {
@@ -58,26 +57,25 @@
 }
 
 @mixin respond($breakpoint) {
-	@if $breakpoint==phone {
-		@media only screen and (max-width: 36em) {
+	@if $breakpoint==phablet {
+		@media only screen and (min-width: $media-phablet) {
 			@content;
 		}
 	}
 
-	@if $breakpoint==tab-port {
-		@media only screen and (max-width: 48em) {
+	@if $breakpoint==tablet{
+		@media only screen and (min-width: $media-tablet) {
 			@content;
 		}
 	}
 
-	@if $breakpoint==tab-land {
-		@media only screen and (max-width: 61.9em) {
+	@if $breakpoint== desktop {
+		@media only screen and (min-width: $media-desktop) {
 			@content;
 		}
 	}
-
-	@if $breakpoint==big-desktop {
-		@media only screen and (min-width: 75em) {
+	@if $breakpoint== ultra-wide {
+		@media only screen and (min-width: $media-ultra-wide) {
 			@content;
 		}
 	}

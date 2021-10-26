@@ -1,0 +1,17 @@
+#skills {
+  grid-area: skills;
+  padding: $space-large;
+  background-color: $beige-light;
+  @include section-grid;
+  @include respond(desktop){
+    padding: $space-x-large;
+  }
+  ul {
+    @include ul-grid(180px);
+    li {
+      text-transform: uppercase;
+      margin: $space-small auto;
+      justify-content: left;
+    }
+  }
+}
