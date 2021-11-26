@@ -51,6 +51,7 @@
 			cursor: pointer;
 			position: relative;
 			margin-bottom: 0.4rem;
+			transition: all 450ms;
 			&:hover {
 				outline: none;
 				transform: translateY(-2px);
@@ -95,6 +96,7 @@
 	z-index: 1000;
 	max-width: 90vw;
 	max-height: 95vh;
+	border-radius: 8px;
 }
 .project-modal {
 	display: grid;
@@ -108,11 +110,10 @@
 	row-gap: .7rem;
 	column-gap: 1.5rem;
 	scroll-behavior: smooth;
-	padding-top: 0;
 	overflow-scrolling: auto;
 	.modal-img {
 		width: 100%;
-		height: 12rem;
+		height: auto;
 		max-height: 50%;
 		object-fit: cover;
 		position: relative;

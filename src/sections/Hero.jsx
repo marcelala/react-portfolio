@@ -21,6 +21,7 @@ export default function Hero() {
 					</a>
 				</div>
 			</div>
+			<div className="fade"/>
 		</div>
 	);
 }
